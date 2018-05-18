@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 895 70">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #e28efc;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="TABS" transform="translate(-232 -1885)">
+    <g id="Rectangle_54" data-name="Rectangle 54" class="cls-1" transform="translate(232 1885)">
+      <rect class="cls-2" width="895" height="70" rx="35"/>
+      <rect class="cls-3" x="1" y="1" width="893" height="68" rx="34"/>
+    </g>
+    <path id="Path_5369" data-name="Path 5369" class="cls-1" d="M0,68.151V0" transform="translate(679.5 1885.5)"/>
+  </g>
+</svg>
