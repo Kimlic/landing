@@ -438,10 +438,14 @@
     float: none;
     margin: 10px 0;
   }
+  header .header_top_menu ul.header_menu_bttn li.language_dropdown .nav-link{
+    margin: 0;
+  }
   header .header_top_menu ul.header_menu_bttn li .fa-close{
     position: absolute;
-    top: 30px;
+    top: 8px;
     right: 8px;
+    font-size: 24px;
   }
   header .header_top_menu ul.menus {
     margin: 10% 0 0;
