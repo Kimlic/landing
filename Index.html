@@ -25,7 +25,7 @@
     <header id="header" class="fixed-top">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="images/svg/kimlik_page_top_logo.svg" height="66"></a>
+        <a class="navbar-brand" href="#"><img src="images/svg/kimlik_page_top_logo.svg" height="55"></a>
         <button class="navbar-toggler menubar_xs" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
         </button>
@@ -122,7 +122,7 @@
 
 
 
-      <section id="partners">
+      <section id="partners" class="animated animatedFadeInUp">
         <div class="container">
           <h1 class="title animated animatedFadeInUp">Do KYC Once, Never Again !</h1>
           <h3 class="subtitle animated animatedFadeInUp">Kimlic is a private blockchain that enables sharing proof of KYC <br>between businesses and institutions by permission of individuals.</h3>
@@ -198,7 +198,7 @@
       </section>
       <!-- Our Solution section start -->
       <section id="our_Solution" class="our_solution animated animatedFadeInUp">
-        <div class="container">
+        <div class="container">.
           <h1 class="title">Our Solution</h1>
           <h3 class="subtitle">Kimlic is a private blockchain that enables sharing proof of KYC<br>
 between businesses and institutions by permission of individuals.</h3>
@@ -274,38 +274,75 @@ between businesses and institutions by permission of individuals.</h3>
 
       <!-- How Kimlic works section start -->
       <section id="how_kimlic_work" class="Kimlic_works animated animatedFadeInUp">
-        <div class="container">
+        <div class="container text-center">
           <h1 class="title">How Kimlic Works</h1>
 
-          <div class="row">
-            <div class="btn-group" role="group" aria-label="Basic example">
-              <button type="button" class="btn">For Financial Institutions</button>
-              <button type="button" class="btn" disabled="">For Frustrated End Users</button>
-            </div>
-          </div>
 
-          <div class="row mt-5">
-            <div class="col-md-6 col-sm-6 col-xs-12 text-center">
-              <img src="images/svg/Financial_institutions_illustration.svg">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="Financial_Institutions_tab" data-toggle="pill" href="#Financial_Institutions" role="tab" aria-controls="Financial_Institutions" aria-selected="true">For Financial Institutions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="Frustrated_End_Users_tab" data-toggle="pill" href="#Frustrated_End_Users" role="tab" aria-controls="Frustrated_End_Users" aria-selected="false">For Frustrated End Users</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="Financial_Institutions" role="tabpanel" aria-labelledby="Financial_Institutions_tab">
+
+              <div class="row mt-5">
+                <div class="col-md-6 col-sm-6 col-xs-12 text-center">
+                  <img src="images/svg/Financial_institutions_illustration.svg">
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 work_section text-left">
+                  <div class="row">
+                    <span class="line"></span>
+                    <span class="circle">1</span>
+                    <h3>Integrate with Kimlic API</h3>
+                    <p>Businesses can easily integrate with Kimlic API <br>without any Blockchain programming experience</p>
+                  </div>
+                  <div class="row">
+                    <span class="line"></span>
+                    <span class="circle">2</span>
+                    <h3>Get KYC proofs from Blockchain</h3>
+                    <p>Access previous KYC data and its proves on <br>Blockchain with permission of onboarding <br>customer online </p>
+                  </div>
+                  <div class="row">
+                    <span class="circle">3</span>
+                    <h3>Decrease CDD / KYC Costs and <br>onboarding Barriers</h3>
+                    <p>No need to re-do KYC thanks to attestation of <br>other Kimlic partners and banks.</p>
+                  </div>
+                </div>
+              </div>
+
             </div>
-            <div class="col-md-6 col-sm-6 col-xs-12 work_section">
-              <div class="row">
-                <span class="line"></span>
-                <span class="circle">1</span>
-                <h3>Integrate with Kimlic API</h3>
-                <p>Businesses can easily integrate with Kimlic API <br>without any Blockchain programming experience</p>
+            <div class="tab-pane fade" id="Frustrated_End_Users" role="tabpanel" aria-labelledby="Frustrated_End_Users_tab">
+
+              <div class="row mt-5">
+                <div class="col-md-6 col-sm-6 col-xs-12 text-center">
+                  <img src="images/svg/End_users_illustration.svg">
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 work_section text-left">
+                  <div class="row">
+                    <span class="line"></span>
+                    <span class="circle">1</span>
+                    <h3>Complete your Kimlic Profile</h3>
+                    <p>Take picture of your eID or passport and complete <br>your profile with personal information.</p>
+                  </div>
+                  <div class="row">
+                    <span class="line"></span>
+                    <span class="circle">2</span>
+                    <h3>Scan QR Code in Bank Office</h3>
+                    <p>Prove your identity with a bank officer for once <br>by granting "read" permission to your personal id <br>supporting documents.</p>
+                  </div>
+                  <div class="row">
+                    <span class="circle">3</span>
+                    <h3>Use Kimlic to Self-Sovereign Online <br>and Earn Tokens</h3>
+                    <p>Now, you no longer need to complete KYC again. <br>Frictionlessly, register for ICO's, Crypto Exchanges <br>and even banks. </p>
+                    <p>Each time you will be rewarded by Kimlic Tokens.</p>
+                  </div>
+                </div>
               </div>
-              <div class="row">
-                <span class="line"></span>
-                <span class="circle">2</span>
-                <h3>Get KYC proofs from Blockchain</h3>
-                <p>Access previous KYC data and its proves on <br>Blockchain with permission of onboarding <br>customer online </p>
-              </div>
-              <div class="row">
-                <span class="circle">3</span>
-                <h3>Decrease CDD / KYC Costs and <br>onboarding Barriers</h3>
-                <p>No need to re-do KYC thanks to attestation of <br>other Kimlic partners and banks.</p>
-              </div>
+
             </div>
           </div>
 
@@ -768,7 +805,7 @@ between businesses and institutions by permission of individuals.</h3>
 
 
       $(window).scroll(function(){
-        if ($(window).scrollTop() >= 100) {
+        if ($(window).scrollTop() >= 300) {
           $('#header').addClass('fixed-header');
         }
         else {

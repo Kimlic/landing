@@ -1,6 +1,24 @@
 
 /* Responsive media classes start ========== */
 
+@media screen and (min-width: 1580px) and (max-width: 1600px){
+  #header_banner{
+    background-position: center 0;
+  }
+  .advisors_board:after, 
+  .technical_team:after{
+    background-position: center 130%;
+  }
+  .road_map .road_map_main ul li .road_map_box .dot, 
+  .road_map .road_map_main ul li .road_map_box:before{
+    right: -94px;
+  }
+  .road_map .road_map_main ul li:nth-child(odd) .road_map_box .dot, 
+  .road_map .road_map_main ul li:nth-child(odd) .road_map_box:before{
+    left: -94px;
+  }
+}
+
 @media screen and (min-width: 1201px) and (max-width: 1500px){
   #header_banner{
     background-size: cover;
@@ -438,14 +456,10 @@
     float: none;
     margin: 10px 0;
   }
-  header .header_top_menu ul.header_menu_bttn li.language_dropdown .nav-link{
-    margin: 0;
-  }
   header .header_top_menu ul.header_menu_bttn li .fa-close{
     position: absolute;
-    top: 8px;
+    top: 30px;
     right: 8px;
-    font-size: 24px;
   }
   header .header_top_menu ul.menus {
     margin: 10% 0 0;
@@ -459,6 +473,58 @@
     opacity: 1;
     animation-name: none;
     -webkit-animation-name: none;
+  }
+}
+@media screen and (max-width: 767px) and (orientation: landscape){
+  .technical_team .team_img, .advisors_board .team_img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  .technical_team .team_img + p, .advisors_board .team_img + p {
+    font-size: 20px;
+    line-height: 25px;
+  } 
+  .technical_team .team_img + p span, .advisors_board .team_img + p span {
+    font-size: 16px;
+  }
+  .advisors_board, 
+  .technical_team{
+    padding: 50px 0 0px;
+  }
+  .advisors_board:after, 
+  .technical_team:after{
+    background-position: center 104%;
+    background-size: 101% auto;
+  }
+  .technical_team .show_all_team, .advisors_board .show_all_team {
+    margin: -90px auto 0;
+  }
+  .kimlic_documents{
+    min-height: 736px;
+  }
+  .technical_team h1 span {
+    font-size: 24px;
+  }
+  footer.footer ul li{
+    width: 100%;
+    display: flex;
+  }
+  footer.footer ul li img{
+    top: 0;
+  }
+  #problem_statement .col-sm-8, 
+  #problem_statement .col-sm-4{
+    flex: 0 0 100%;
+    max-width: 100%
+  }
+}
+
+@media screen and (max-width: 600px){
+  footer.footer ul li{
+    width: 100%;
+    float: none;
+    text-align: center;
+    display: inline-block;
   }
 }
 

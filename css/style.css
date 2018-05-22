@@ -35,7 +35,8 @@ img {
 	padding: 0.5rem 2rem;
 }
 .fixed-header {
-  background: rgba(0,0,0,0.8);
+  background: #DF81FF;
+  height: 80px;
 }
 header .header_top_menu {
   background: #333;
@@ -162,7 +163,7 @@ header .header_top_menu .navbar-nav .dropdown-menu{
 
 #header_banner {
 	position: relative;
-	background: url("../images/svg/background_degradient.svg") no-repeat center -200px;
+	background: url("../images/svg/background_degradient.svg") no-repeat center 0;
   background-size: 100% auto;
 	width: 100%;
 }
@@ -321,21 +322,31 @@ header .header_top_menu .navbar-nav .dropdown-menu{
 .Kimlic_works{
   margin-top: 20px;
 }
-.Kimlic_works .btn-group {
+.Kimlic_works ul.nav.nav-pills {
   width: 80%;
   margin: 0 auto;
 }
-.Kimlic_works .btn-group button.btn {
+.Kimlic_works ul.nav.nav-pills li{
+  display: block;
   width: 50%;
+  text-align: center;
+}
+.Kimlic_works ul.nav.nav-pills li a {
+  display: block;
+  color: #e28efc;
+  font-size: 22px;
   background: none;
+  opacity: 0.6;
   border: #e28efc solid 2px;
   border-radius: 20px 0 0 20px;
   padding: 15px 0;
-  color: #e28efc;
-  font-size: 22px;
 }
-.Kimlic_works .btn-group button.btn:last-child {
+.Kimlic_works ul.nav.nav-pills li a.active{
+  opacity: 1;
+}
+.Kimlic_works ul.nav.nav-pills li:last-child a {
   border-radius: 0 20px 20px 0;
+  border-left: none;
 }
 .Kimlic_works img{
   max-width: 55%;
