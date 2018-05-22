@@ -450,6 +450,12 @@
     margin: 14px 0;
     font-size: 20px;
   }
+
+  .fadeInUp, .fadeInLeft, .fadeInRight {
+    opacity: 1;
+    animation-name: none;
+    -webkit-animation-name: none;
+  }
 }
 
 
