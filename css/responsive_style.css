@@ -51,6 +51,12 @@
   .kimlic_documents{
     min-height: 1000px;
   }
+  .fund_allocation{
+    padding-bottom: 30px;
+  }
+  .technical_team:after{
+    top: 2px;
+  }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1200px){
@@ -101,6 +107,7 @@
   }
   .technical_team:after{
     background-position: center 106%;
+    top: 2px;
   }
   .advisors_board:after{
     background-position: center 102%;
@@ -170,6 +177,9 @@
     min-height: 750px;
     padding: 80px 0;
   }
+  .kimlic_documents:after{
+    top: 2px;
+  }
   .kimlic_documents h3 {
     font-size: 21px;
     line-height: 45px;
@@ -184,7 +194,7 @@
     font-size: 18px;
   }
   .fund_allocation .token_details_box{
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
   .road_map .road_map_main ul li .road_map_box{
     max-width: 300px;
@@ -218,6 +228,8 @@
   }
   .technical_team:after{
     background-position: center 106%;
+    top: 2px;
+    background-size: 101% auto;
   }
   .title span{
     font-size: 28px;
@@ -229,8 +241,9 @@
     overflow: hidden;
     padding: 0;
   }
-   .advisors_board:after{
+  .advisors_board:after{
     background-position: center 103%;
+    top: 5px;
   }
   .kimlic_mailing_list .form-group {
     width: 92%;
@@ -248,6 +261,12 @@
 }
 
 @media screen and (max-width: 767px){
+  .fixed-header{
+    height: auto;
+  }
+  .header_subscribe {
+    padding-top: 100px;
+  }
   .header_subscribe .mobile-app{
     margin-top: 50px;
   }
@@ -345,26 +364,30 @@
     font-size: 16px;
   }
   .kimlic_documents{
-    padding: 80px 0;
+    padding: 70px 0;
+    min-height: 600px;
   }
   .kimlic_documents h1 {
     font-size: 30px;
     text-align: center;
   }
   .kimlic_documents h3 {
-    font-size: 20px;
-    line-height: 34px;
+    font-size: 18px;
+    line-height: 30px;
     text-align: center;
   }
   .kimlic_documents h3 button {
-    width: 80%;
+    width: 100%;
+    max-width: 300px;
     float: none;
-    margin-bottom: 10px;
+    margin: 0 auto 10px;
+    display: block;
   }
   .title span {
     font-size: 24px;
   }
-  .fund_allocation img {
+  .fund_allocation img, 
+  .kimlic_token_distribution img {
     max-width: 100%;
     margin-left: 0 !important;
   }
@@ -382,9 +405,14 @@
     width: 100%;
     display: block;
   }
+  .road_map .road_map_main ul {
+    margin: 30px 0 0;
+    padding: 70px 0;
+  }
   .road_map .road_map_main ul li .road_map_box{
-    max-width: 280px;
+    max-width: 480px;
     margin: 0 auto;
+    width: 90%;
   }
   .road_map .road_map_main ul li:nth-child(2n+1) .road_map_box{
     float: none;
@@ -392,6 +420,7 @@
   .road_map .road_map_main ul li, 
   .road_map .road_map_main ul.blue_year{
     margin-top: 30px;
+    padding: 20px 0;
   }
   .road_map .road_map_main ul li .road_map_box p {
     font-size: 18px;
@@ -419,16 +448,16 @@
     right: 6px;
     top: 6px;
     font-size: 14px;
-    padding: 6px 0;
+    padding: 8px 0;
     max-width: 100px;
   }
   footer.footer {
-    margin-top: 0;
+    margin-top: 25px;
     padding: 50px 0;
     text-align: center;
   }
   footer.footer h4 {
-    margin: 40px 0 42px;
+    margin: 6px 0 42px;
   }
   header .navbar-brand{
     max-width: 150px;
@@ -437,7 +466,7 @@
     padding: 0 10px;
   }
   header nav .navbar-toggler-icon{
-    color: #fff;
+    color: #333;
   }
   header .white_paper_btn, header .language_dropdown, 
   header nav.navbar .navbar-collapse{
@@ -458,15 +487,16 @@
   }
   header .header_top_menu ul.header_menu_bttn li .fa-close{
     position: absolute;
-    top: 30px;
+    top: 8px;
     right: 8px;
+    font-size: 26px;
   }
   header .header_top_menu ul.menus {
     margin: 10% 0 0;
   }
   header .header_top_menu ul.menus li {
     margin: 14px 0;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .fadeInUp, .fadeInLeft, .fadeInRight {
@@ -474,12 +504,36 @@
     animation-name: none;
     -webkit-animation-name: none;
   }
-}
-@media screen and (max-width: 767px) and (orientation: landscape){
+  .Kimlic_works ul.nav.nav-pills li a {
+    font-size: 16px;
+  }
   .technical_team .team_img, .advisors_board .team_img {
     max-width: 100px;
     max-height: 100px;
   }
+  .kimlic_documents:after{
+    top: auto;
+    bottom: -2px;
+  }
+  .technical_team h1 span {
+    font-size: 24px;
+  }
+  .technical_team h1 span br{
+    display: none;
+  }
+  #problem_statement{
+    margin-top: 35px;
+  }
+  .kimlic_documents h1 + h3 {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 767px){
+  .technical_team:after{
+    background-position: center 102%;
+  }
+}
+@media screen and (max-width: 767px) and (orientation: landscape){
   .technical_team .team_img + p, .advisors_board .team_img + p {
     font-size: 20px;
     line-height: 25px;
@@ -489,21 +543,19 @@
   }
   .advisors_board, 
   .technical_team{
-    padding: 50px 0 0px;
+    padding: 50px 0 -2px;
   }
   .advisors_board:after, 
   .technical_team:after{
     background-position: center 104%;
     background-size: 101% auto;
+    top: 2px;
   }
-  .technical_team .show_all_team, .advisors_board .show_all_team {
-    margin: -40px auto 0;
+  .technical_team .show_all_team {
+    margin: 60px auto 0;
   }
-  .kimlic_documents{
-    min-height: 736px;
-  }
-  .technical_team h1 span {
-    font-size: 24px;
+  .advisors_board .show_all_team {
+    margin: -8px auto 0;
   }
   footer.footer ul li{
     width: 100%;
@@ -513,13 +565,55 @@
     top: 0;
   }
   #problem_statement .col-sm-8, 
-  #problem_statement .col-sm-4{
+  #problem_statement .col-sm-4, 
+  .Kimlic_works .tab-content .col-sm-6{
     flex: 0 0 100%;
     max-width: 100%
   }
+  .our_solution img {
+    height: 450px;
+  }
+  .kimlic_token_distribution img {
+    max-width: 100%;
+    margin-left: 0;
+  }
+  #problem_statement h2, .Kimlic_features h2 {
+    font-size: 26px;
+    margin-top: 10px;
+  }
+  .Kimlic_features img {
+    height: 230px;
+  }
+  .Kimlic_features .row {
+    margin-bottom: 10px;
+  }
+  .road_map .road_map_main ul.blue_year {
+    padding: 0 0 50px;
+  }
+  .road_map .road_map_main ul li .road_map_box {
+    width: 98%;
+    max-width: 488px;
+  }
+  .Kimlic_works .work_section h3 {
+    font-size: 20px;
+  }
+  .Kimlic_works .work_section {
+    font-size: 18px;
+  }
+  .navbar-toggler {
+    font-size: 26px;
+    line-height: 40px;
+  }
+  .kimlic_documents h1 + h3 {
+    margin-bottom: 20px;
+  }
 }
-
-@media screen and (max-width: 600px){
+@media screen and (min-width: 700px) and (max-width: 767px){
+  .technical_team .show_all_team {
+    margin: 13px auto 0;
+  }
+}
+@media screen and (max-width: 599px){
   footer.footer ul li{
     width: 100%;
     float: none;
@@ -527,7 +621,13 @@
     display: inline-block;
   }
 }
-
+@media screen and (min-width: 600px) and (max-width: 767px){
+  footer.footer ul li{
+    display: flex;
+    top: 0;
+    width: 100%;
+  }
+}
 
 @media (min-width: 1600px) {
 	.container {
