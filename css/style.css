@@ -279,10 +279,19 @@ header .header_top_menu .navbar-nav .dropdown-menu{
 .our_solution{
   position: relative;
   z-index: 5;
+  padding-top: 70px;
+}
+#our_Solution:before {
+  content: '';
+  width: 100%;
+  height: 70px;
+  left: 0;
+  position: absolute;
+  top: 0;
 }
 .our_solution img{
   height: 1200px;
-  margin: 0 auto 20px;
+  margin: 0 auto 59px;
 }
 .our_solution:after{
   position: absolute;
@@ -301,6 +310,15 @@ header .header_top_menu .navbar-nav .dropdown-menu{
 .Kimlic_features{
   font-family: 'mulilight';
   color: #819eb6;
+  padding-top: 70px;
+}
+.Kimlic_features:before {
+  content: '';
+  width: 100%;
+  height: 70px;
+  left: 0;
+  position: absolute;
+  top: 0;
 }
 .Kimlic_features .row{
   margin-bottom: 50px;
@@ -308,6 +326,7 @@ header .header_top_menu .navbar-nav .dropdown-menu{
 .Kimlic_features h2{
   font-size: 36px;
   margin-top: 20px;
+  font-family:'mulisemibold';
 }
 .Kimlic_features h2 span{
   color: #00afff;
@@ -321,6 +340,15 @@ header .header_top_menu .navbar-nav .dropdown-menu{
 }
 .Kimlic_works{
   margin-top: 20px;
+  padding-top: 70px;
+}
+.Kimlic_works:before {
+  content: '';
+  width: 100%;
+  height: 70px;
+  left: 0;
+  position: absolute;
+  top: 0;
 }
 .Kimlic_works ul.nav.nav-pills {
   width: 80%;
@@ -333,19 +361,19 @@ header .header_top_menu .navbar-nav .dropdown-menu{
 }
 .Kimlic_works ul.nav.nav-pills li a {
   display: block;
-  color: #e28efc;
+  color: #d345ff;
   font-size: 22px;
   background: none;
   opacity: 0.6;
   border: #e28efc solid 2px;
-  border-radius: 20px 0 0 20px;
+  border-radius: 40px 0 0 40px;
   padding: 15px 0;
 }
 .Kimlic_works ul.nav.nav-pills li a.active{
   opacity: 1;
 }
 .Kimlic_works ul.nav.nav-pills li:last-child a {
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 40px 40px 0;
   border-left: none;
 }
 .Kimlic_works img{
@@ -399,6 +427,7 @@ header .header_top_menu .navbar-nav .dropdown-menu{
   padding: 150px 0;
   color: #fff;
   position: relative;
+  font-family: 'mulilight';
 }
 .kimlic_documents:after{
   position: absolute;
@@ -423,6 +452,7 @@ header .header_top_menu .navbar-nav .dropdown-menu{
 .kimlic_documents h3{
   font-size: 30px;
   line-height: 50px;
+  margin-bottom: 15px;
 }
 .kimlic_documents img{
   max-height: 500px;
@@ -432,8 +462,8 @@ header .header_top_menu .navbar-nav .dropdown-menu{
 }
 .kimlic_documents h3 button{
   border-radius: 30px;
-  padding: 10px 40px;
-  font-size: 18px;
+  padding: 4px 24px;
+  font-size: 22px;
 }
 .kimlic_token_distribution img{
   max-width: 80%;
@@ -490,7 +520,7 @@ header .header_top_menu .navbar-nav .dropdown-menu{
   font-family:'mulisemibold';
 }
 .fund_allocation .token_details_box ul li:not(:last-child){
-  border-bottom: #dfedfe solid 2px;
+  border-bottom: #d9eaff solid 1px;
 }
 .fund_allocation .token_details_box ul li span{
   color: #a1b7c9;
@@ -565,7 +595,7 @@ header .header_top_menu .navbar-nav .dropdown-menu{
   border: #ebf1f9 solid 3px;
   border-top: none;
   position: relative;
-  padding: 30px 0 10px 30px;
+  padding: 30px 20px 10px 30px;
 }
 .road_map .road_map_main ul li:nth-child(odd) .road_map_box{
   float: right;
@@ -639,7 +669,7 @@ header .header_top_menu .navbar-nav .dropdown-menu{
   background: #95d3ff;
 }
 .road_map .road_map_main ul li:nth-child(odd) .road_map_box .dot{
-  left: -214px;
+  left: -211px;
   right: auto;
 }
 .road_map .road_map_main ul li .road_map_box h4{
@@ -851,11 +881,22 @@ footer.footer ul li img{
   position: relative;
   top: -5px;
   margin-right: 5px;
+  width: 30px;
 }
 footer.footer ul.company li{
   width: 100%;
 }
-
+#road_map {
+  padding-top: 70px;
+}
+#road_map:before {
+  content: '';
+  width: 100%;
+  height: 70px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
 
 
 
