@@ -12,33 +12,6 @@
   }
 }
 
-@media screen and (max-width: 1366px){
-  .our_solution img {
-    margin: 0 auto 46px;
-  }
-}
-
-@media screen and (max-width: 1200px){
-  .road_map .road_map_main ul li .road_map_box .dot,
-  .road_map .road_map_main ul li .road_map_box:before{
-    right: -110px;
-  }
-  .road_map .road_map_main ul li:nth-child(odd) .road_map_box .dot,
-  .road_map .road_map_main ul li:nth-child(odd) .road_map_box:before{
-    left: -108px;
-  }
-}
-@media screen and (max-width: 1024px){
-  .road_map .road_map_main ul li .road_map_box .dot,
-  .road_map .road_map_main ul li .road_map_box:before{
-    right: -192px;
-  }
-  .road_map .road_map_main ul li:nth-child(odd) .road_map_box .dot,
-  .road_map .road_map_main ul li:nth-child(odd) .road_map_box:before{
-    left: -190px;
-  }
-}
-
 
 @media screen and (min-width: 1580px) and (max-width: 1600px){
   #header_banner{
@@ -48,14 +21,6 @@
   .technical_team:after{
     background-position: center 130%;
   }
-  /*.road_map .road_map_main ul li .road_map_box .dot, 
-  .road_map .road_map_main ul li .road_map_box:before{
-    right: -94px;
-  }
-  .road_map .road_map_main ul li:nth-child(odd) .road_map_box .dot, 
-  .road_map .road_map_main ul li:nth-child(odd) .road_map_box:before{
-    left: -94px;
-  }*/
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1500px){
@@ -70,20 +35,6 @@
   .technical_team:after{
     background-position: center 116%;
   }
-  /*.road_map .road_map_main ul li .road_map_box:before{
-    right: -86px;
-    top: 49.5%;
-  }
-  .road_map .road_map_main ul li:nth-child(odd) .road_map_box:before{
-    left: -86px;
-    top: 49%;
-  }
-  .road_map .road_map_main ul li .road_map_box .dot{
-    right: -93px;
-  }
-  .road_map .road_map_main ul li:nth-child(odd) .road_map_box .dot{
-    left: -93px
-  }*/
   .fund_allocation:after{
     background-position: center 122%;
   }
@@ -95,6 +46,33 @@
   }
   .technical_team:after{
     top: 2px;
+  }
+}
+
+@media (max-width: 1300px){
+  .Kimlic_features img {
+    height: 300px;
+  }
+}
+
+
+@media screen and (max-width: 1200px){
+  .road_map .road_map_main ul li .road_map_box .dot,
+  .road_map .road_map_main ul li .road_map_box:before{
+    right: -110px;
+  }
+  .road_map .road_map_main ul li:nth-child(odd) .road_map_box .dot,
+  .road_map .road_map_main ul li:nth-child(odd) .road_map_box:before{
+    left: -108px;
+  }
+  #problem_statement h2 {
+    font-size: 26px;
+  }
+  #problem_statement h3 {
+    font-size: 24px;
+  }
+  #problem_statement p {
+    margin-top: 15px;
   }
 }
 
@@ -111,9 +89,6 @@
   }
   .our_solution img {
     height: 817px;
-  }
-  .our_solution:after{
-    height: 67%;
   }
   .kimlic_documents {
     background-size: 100% auto, cover;
@@ -161,6 +136,17 @@
   }
 }
 
+@media screen and (max-width: 1024px){
+  .road_map .road_map_main ul li .road_map_box .dot,
+  .road_map .road_map_main ul li .road_map_box:before{
+    right: -192px;
+  }
+  .road_map .road_map_main ul li:nth-child(odd) .road_map_box .dot,
+  .road_map .road_map_main ul li:nth-child(odd) .road_map_box:before{
+    left: -190px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1023px){
   .header_subscribe h1{
     font-size: 40px;
@@ -185,10 +171,6 @@
   }
   .our_solution img {
     height: 600px;
-    margin: 0 auto 27px;
-  }
-  .our_solution:after{
-    height: 69%;
   }
   .Kimlic_features h2 {
     font-size: 30px;
@@ -244,20 +226,11 @@
   .road_map .road_map_main ul li .road_map_box p {
     font-size: 15px;
   }
-  /*.road_map .road_map_main ul li .road_map_box .dot, 
-  .road_map .road_map_main ul li .road_map_box:before{
-    right: -72px;
-  }
-  .road_map .road_map_main ul li:nth-child(odd) .road_map_box .dot, 
-  .road_map .road_map_main ul li:nth-child(odd) .road_map_box:before{
-    left: -69px;
-  }*/
   .technical_team h1 span{
     font-size: 26px;
   }
   .technical_team .team_img + p, .advisors_board .team_img + p{
     font-size: 16px;
-    margin-top: -8px;
   }
   .technical_team .team_img + p span, .advisors_board .team_img + p span{
     font-size: 16px;
@@ -327,9 +300,6 @@
   #partners {
     margin-top: -10px;
   }
-  .header_subscribe h1 {
-    font-size: 24px;
-  }
   .header_subscribe h3 {
     font-size: 17px
   }
@@ -362,22 +332,27 @@
   #problem_statement img{
     display: block;
     margin: 20px auto 10px;
+    max-width: 160px;
+    max-height: 130px;
   }
   #problem_statement h2, 
-  .Kimlic_features h2{
-    font-size: 30px;
+  .Kimlic_features h2 span{
+    font-size: 26px;
     text-align: center;
-  }
-  #problem_statement h3{
-    font-size: 24px;
+    margin-top: 20px;
+  }  
+  #problem_statement h3,
+  .Kimlic_features h2 {
+    font-size: 22px;
     text-align: center;
   } 
-  #problem_statement p{
+  #problem_statement p,
+  .Kimlic_features p {
     text-align: center;
+    font-size: 18px;
   }
   .our_solution img{
-    height: 400px; 
-    margin: 0 auto 39px;
+    height: 400px;
   }
   .our_solution::after {
     height: 72%;
@@ -385,11 +360,9 @@
   .Kimlic_features img {
     margin: 0 auto;
     display: block;
-    height: 300px;
-  }
-  .Kimlic_features p{
-    font-size: 20px;
-    text-align: center;
+    height: auto;
+    max-width: 160px;
+    max-height: 160px;
   }
   .Kimlic_works .btn-group {
     width: 98%;
@@ -400,9 +373,11 @@
     padding: 8px 0;
   }
   .Kimlic_works img {
-    max-width: 80%;
+    max-width: 50%;
   }
-  .Kimlic_works .work_section h3{
+  .Kimlic_works .work_section h3,
+  .header_subscribe h1,
+  .title span {
     font-size: 24px;
   }
   .Kimlic_works .work_section .row .circle {
@@ -416,6 +391,7 @@
   .kimlic_documents{
     padding: 70px 0;
     min-height: 600px;
+    margin-top: 0;
   }
   .kimlic_documents h1 {
     font-size: 30px;
@@ -428,14 +404,11 @@
   }
   .kimlic_documents h3 button {
     width: 100%;
-    max-width: 300px;
+    max-width: 170px;
     float: none;
     margin: 0 auto 30px;
     display: block;
-  }
-  .title span {
-    font-size: 24px;
-  }
+  }  
   .fund_allocation img, 
   .kimlic_token_distribution img {
     max-width: 100%;
@@ -472,7 +445,8 @@
     margin-top: 30px;
     padding: 20px 0;
   }
-  .road_map .road_map_main ul li .road_map_box p {
+  .road_map .road_map_main ul li .road_map_box p,
+  .Kimlic_works .work_section p {
     font-size: 18px;
   }
   .road_map .road_map_main ul li .road_map_box h4 {
@@ -549,7 +523,6 @@
     margin: 14px 0;
     font-size: 16px;
   }
-
   .fadeInUp, .fadeInLeft, .fadeInRight {
     opacity: 1;
     animation-name: none;
@@ -611,7 +584,7 @@
     margin-bottom: 0;
   }
   .technical_team {
-    padding: 50px 0;
+    padding: 20px 0 50px;
   }
   .advisors_board {
     padding-bottom: 0;
@@ -622,6 +595,42 @@
   }
   .Kimlic_works .work_section .row {
     padding: 5px 20px 30px 60px;
+  }
+  .Kimlic_works ul.nav.nav-pills {
+    width: 100%;
+    margin: 10px auto 0;
+  }
+  .Kimlic_works ul.nav.nav-pills li {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    padding: 15px 10px;
+  }
+  .kimlic_documents img {
+    max-height: 300px;
+  }
+  .Kimlic_features .row,
+  .Kimlic_features .row .col-lg-5 {
+    margin-bottom: 30px;
+  }
+  .Kimlic_features .row .col-lg-5:last-child,
+  #problem_statement .title {
+    margin-bottom: 0;
+  }
+  #advisors_board .title {
+    padding-top: 0;
+  }
+  #kimlic_mailing_list .title span {
+    font-size: 20px;
+    line-height: 25px;
+    display: block;
+    margin: 10px 0;
   }
 }
 
@@ -659,7 +668,6 @@
   }
   .our_solution img {
     height: 450px;
-    margin: 0 auto 35px;
   }
   .kimlic_token_distribution img {
     max-width: 100%;
@@ -694,6 +702,24 @@
   }
   .kimlic_documents h1 + h3 {
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 380px){
+  .our_solution .solution-img:after {
+    height: 56%;
+  }
+}
+
+@media (max-width: 375px){
+  .our_solution .solution-img:after {
+    height: 57%;
+  }
+}
+
+@media (max-width: 340px){
+  .our_solution .solution-img:after {
+    height: 55.4%;
   }
 }
 

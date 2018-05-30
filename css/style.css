@@ -49,6 +49,7 @@ header .header_top_menu {
   z-index: 9999;
   display: block;
   text-align: center;
+  overflow: auto;
   padding: 24px 0 0 50px;
   transition: right ease-in-out 0.5s;
   -webkit-transition: right ease-in-out 0.5s;
@@ -279,30 +280,21 @@ header .header_top_menu .navbar-nav .dropdown-menu{
 .our_solution{
   position: relative;
   z-index: 5;
-  padding-top: 70px;
-}
-#our_Solution:before {
-  content: '';
-  width: 100%;
-  height: 70px;
-  left: 0;
-  position: absolute;
-  top: 0;
+  padding-top: 50px;
 }
 .our_solution img{
-  height: 1200px;
-  margin: 0 auto 59px;
+  height: 1073px;
+  margin: 0 auto;
 }
-.our_solution:after{
+.our_solution .solution-img:after{
   position: absolute;
   content: "";
   width: 100%;
   /*background: url(../images/svg/Solutions_background.svg) no-repeat 0 0 #f6f8fb;*/
-  background: linear-gradient(#f6f8fb, #bad7ff);
-  background: -webkit-linear-gradient(#f6f8fb, #bad7ff);
-  background: -ms-linear-gradient(#f6f8fb, #bad7ff);
-  background-size: cover;
-  height: 64.2%;
+  background: linear-gradient(90deg, #bad7ff 39%,#F6F8FB 100%);
+  background: -webkit-linear-gradient(90deg, #bad7ff 39%,#F6F8FB 100%);
+  background: -ms-linear-gradient(90deg, #bad7ff 39%,#F6F8FB 100%);
+  height: 57.4%;
   top: 0;
   left: 0;
   z-index: -1;
@@ -310,15 +302,7 @@ header .header_top_menu .navbar-nav .dropdown-menu{
 .Kimlic_features{
   font-family: 'mulilight';
   color: #819eb6;
-  padding-top: 70px;
-}
-.Kimlic_features:before {
-  content: '';
-  width: 100%;
-  height: 70px;
-  left: 0;
-  position: absolute;
-  top: 0;
+  padding-top: 0px;
 }
 .Kimlic_features .row{
   margin-bottom: 50px;
@@ -340,15 +324,6 @@ header .header_top_menu .navbar-nav .dropdown-menu{
 }
 .Kimlic_works{
   margin-top: 20px;
-  padding-top: 70px;
-}
-.Kimlic_works:before {
-  content: '';
-  width: 100%;
-  height: 70px;
-  left: 0;
-  position: absolute;
-  top: 0;
 }
 .Kimlic_works ul.nav.nav-pills {
   width: 80%;
@@ -358,21 +333,23 @@ header .header_top_menu .navbar-nav .dropdown-menu{
   display: block;
   width: 50%;
   text-align: center;
-}
-.Kimlic_works ul.nav.nav-pills li a {
-  display: block;
-  color: #d345ff;
-  font-size: 22px;
-  background: none;
-  opacity: 0.6;
+  background: none;  
   border: #e28efc solid 2px;
   border-radius: 40px 0 0 40px;
   padding: 15px 0;
 }
+.Kimlic_works ul.nav.nav-pills li a {
+  display: block;
+  color: #d345ff;
+  font-size: 22px;  
+  background: transparent;
+  opacity: 0.6;
+  padding: 0;
+}
 .Kimlic_works ul.nav.nav-pills li a.active{
   opacity: 1;
 }
-.Kimlic_works ul.nav.nav-pills li:last-child a {
+.Kimlic_works ul.nav.nav-pills li:last-child {
   border-radius: 0 40px 40px 0;
   border-left: none;
 }
@@ -804,6 +781,7 @@ header .header_top_menu .navbar-nav .dropdown-menu{
   color: #888;
   font-size: 26px;
   font-family: 'mulilight';
+  -webkit-appearance: none;
 }
 .kimlic_mailing_list button {
   position: absolute;
@@ -886,18 +864,13 @@ footer.footer ul li img{
 footer.footer ul.company li{
   width: 100%;
 }
-#road_map {
-  padding-top: 70px;
+#problem_statement .title {
+  margin-bottom: 30px;
 }
-#road_map:before {
-  content: '';
-  width: 100%;
-  height: 70px;
-  left: 0;
-  position: absolute;
-  top: 0;
+.solution-img {
+  position: relative;
+  margin-top: 50px;
 }
-
 
 
 /* Animation */
