@@ -33,7 +33,7 @@
   }
   .advisors_board:after, 
   .technical_team:after{
-    background-position: center 116%;
+    background-position: center 112%;
   }
   .fund_allocation:after{
     background-position: center 122%;
@@ -46,6 +46,18 @@
   }
   .technical_team:after{
     top: 2px;
+  }
+}
+
+@media(max-width: 1366px) {
+  .technical_team {
+    padding: 50px 0 0;
+  }  
+  .open.technical_team {
+    padding-bottom: 50px;
+  }
+  .advisors_board {
+    padding-bottom: 0;
   }
 }
 
@@ -73,6 +85,12 @@
   }
   #problem_statement p {
     margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1200px){
+  .road_map .road_map_main ul li .road_map_box {
+    max-width: 470px;
   }
 }
 
@@ -136,7 +154,7 @@
   }
 }
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1023px){
   .road_map .road_map_main ul li .road_map_box .dot,
   .road_map .road_map_main ul li .road_map_box:before{
     right: -192px;
@@ -246,9 +264,6 @@
   .title span{
     font-size: 28px;
   }
-  .technical_team .show_all_team, .advisors_board .show_all_team{
-    margin: -60px auto 0;
-  }
   .advisors_board{
     overflow: hidden;
     padding: 0;
@@ -304,11 +319,12 @@
     font-size: 17px
   }
   .header_subscribe form {
-    max-width: 280px;
+    max-width: 95%;
   }
   .header_subscribe form .form-control {
-    padding: 12px 30px;
+    padding: 12px;
     font-size: 16px;
+    width: 100%;
   }
   .header_subscribe form button{
     font-size: 15px;
@@ -402,7 +418,7 @@
     line-height: 30px;
     text-align: center;
   }
-  .kimlic_documents h3 button {
+  .kimlic_documents h3 a {
     width: 100%;
     max-width: 170px;
     float: none;
@@ -584,7 +600,7 @@
     margin-bottom: 0;
   }
   .technical_team {
-    padding: 20px 0 50px;
+    padding: 20px 0 0;
   }
   .advisors_board {
     padding-bottom: 0;
@@ -632,6 +648,17 @@
     display: block;
     margin: 10px 0;
   }
+  .open .all_team,
+  .open .all_advisors {
+    max-height: 100%;
+  }
+  .bg-gray {
+    padding-top: 0;
+  }
+  #partners a {
+    margin: 10px auto;
+    max-width: 170px;
+ }
 }
 
 @media screen and (max-width: 767px) and (orientation: landscape){

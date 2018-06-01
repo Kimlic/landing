@@ -51,9 +51,9 @@ header .header_top_menu {
   text-align: center;
   overflow: auto;
   padding: 24px 0 0 50px;
-  transition: right ease-in-out 0.5s;
-  -webkit-transition: right ease-in-out 0.5s;
-  -ms-transition: right ease-in-out 0.5s;
+  transition: right ease-in-out 0.3s;
+  -webkit-transition: right ease-in-out 0.3s;
+  -ms-transition: right ease-in-out 0.3s;
 }
 header .header_top_menu.open {
   right: 0;
@@ -437,7 +437,7 @@ header .header_top_menu .navbar-nav .dropdown-menu{
 .kimlic_documents h1 + h3{
   margin-bottom: 50px;
 }
-.kimlic_documents h3 button{
+.kimlic_documents h3 a {
   border-radius: 30px;
   padding: 4px 24px;
   font-size: 22px;
@@ -674,20 +674,23 @@ header .header_top_menu .navbar-nav .dropdown-menu{
   /*background: url(../images/svg/team_background.svg) no-repeat 0 0;*/
   background-size: cover;
   min-height: 800px;
-  padding: 50px 0 70px;
+  padding: 50px 0 0;
   color: #fff;
   position: relative;
+  transition: all 0.5s ease-out;
 }
-.technical_team:after{
+/*.technical_team:after{
   position: absolute;
   content: "";
-  background: url(../images/svg/team_Background_Cut.svg) no-repeat center 150%;
+  background: url(../images/svg/team_Background_Cut.svg) no-repeat;
+  background-position: center 116%;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   background-size: 100% auto;
-}
+  z-index: 0;
+}*/
 .technical_team h1{
   color: #fff;
 }
@@ -732,7 +735,7 @@ header .header_top_menu .navbar-nav .dropdown-menu{
   background: #9360fe;
   color: #fff;
   padding: 12px 0;
-  position: absolute;
+  position: relative;  
   z-index: 9;
   left: 0;
   right: 0;
@@ -750,22 +753,23 @@ header .header_top_menu .navbar-nav .dropdown-menu{
   min-height: 800px;
   padding-bottom: 40px;
 }
-.advisors_board:after{
+/*.advisors_board:after{
   position: absolute;
   content: "";
-  background: url(../images/svg/team_Background_Cut.svg) no-repeat center 150%;
+  background: url(../images/svg/team_Background_Cut.svg) no-repeat center 123%;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   background-size: 100% auto;
-}
+  z-index: 0;
+}*/
 .advisors_board .team_img + p{
   color: #4a6479;
 }
 .advisors_board .show_all_team{
   background: #839fb7;
-  margin: -30px auto 50px;
+  margin: 50px auto 0;
 }
 .kimlic_mailing_list .form-group {
   position: relative;
@@ -819,9 +823,10 @@ footer.footer{
   padding: 80px 0;
   color: #fff;
 }
-footer.footer p img{
+footer.footer .footer-logo {
   max-width: 200px;
   width: 100%;
+  margin-bottom: 30px;
 }
 footer.footer p{
   font-size: 18px;
@@ -871,7 +876,66 @@ footer.footer ul.company li{
   position: relative;
   margin-top: 50px;
 }
-
+.all_team, .all_advisors {
+  transition: max-height 0.3s ease-out;
+  -webkit-mask-image: linear-gradient(to top,rgba(255,255,255,0) 4%,#fff 20%);
+}
+.closed .all_team {
+  max-height: 1070px;
+  overflow: hidden;
+  position: relative;
+}
+.closed .all_advisors {
+  max-height: 885px;
+}
+.all_team:after, .all_advisors:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 50px;
+  z-index: 9;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom,rgba(249,248,253,0) 0,#F9F8FD 100%);
+}
+.open .all_team {
+  max-height: 1490px;
+  overflow: visible;
+  -webkit-mask-image: inherit;  
+}
+.open .all_team + .bg-gray {
+  display: none;
+}
+.technical_team.open {
+  padding-bottom: 70px;
+}
+.all_advisors {
+  background: #f6f8fb;
+  overflow: hidden;
+}
+.open .all_advisors {
+  max-height: 1326px;
+  overflow: visible; 
+  -webkit-mask-image: inherit;
+}
+.technical_team.open .all_team:after,
+.advisors_board.open .all_advisors:after {
+  display: none;
+}
+.link {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;  
+}
+.bg-gray {
+  background: #f6f8fb;
+  padding-top: 70px;
+}
+#partners a  {
+ display: block;
+ line-height: 102px;
+} 
 
 /* Animation */
 
@@ -899,7 +963,6 @@ footer.footer ul.company li{
   animation-name: fadeInRight;
   -webkit-animation-name: fadeInRight;
 }
-
 
 @keyframes fadeInUp {
   from {
