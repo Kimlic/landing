@@ -934,7 +934,7 @@ footer.footer ul.company li{
 }
 #partners a  {
  display: block;
- line-height: 102px;
+ text-align: center;
 } 
 
 /* Animation */
