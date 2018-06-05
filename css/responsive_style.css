@@ -69,6 +69,9 @@
   #problem_statement p {
     margin-top: 15px;
   }
+  header .header_top_menu {
+    max-width: 430px;
+  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1200px){
@@ -264,7 +267,6 @@
   header nav .navbar-toggler-icon{
     color: #fff;
   }
-  header .white_paper_btn, header .language_dropdown, 
   header nav.navbar .navbar-collapse{
     display: none;
   }
@@ -278,6 +280,12 @@
   .road_map .road_map_main ul li:nth-child(odd) .road_map_box .dot,
   .road_map .road_map_main ul li:nth-child(odd) .road_map_box:before{
     left: -84px;
+  }
+  header .header_top_menu ul.menus {
+    margin: 12% auto;
+  }
+  header .header_top_menu ul.menus li {
+    font-size: 24px;
   }
 }
 
@@ -301,15 +309,15 @@
   .header_subscribe h3 {
     font-size: 17px
   }
-  .header_subscribe form {
+  .header_newsletter {
     max-width: 95%;
   }
-  .header_subscribe form .form-control {
+  .header_newsletter .form-control {
     padding: 12px;
     font-size: 16px;
     width: 100%;
   }
-  .header_subscribe form button{
+  .header_newsletter button{
     font-size: 15px;
     padding: 10px 20px;
   }
@@ -490,9 +498,8 @@
     padding: 0 10px;
   }
   header nav .navbar-toggler-icon{
-    color: #333;
-  }
-  header .white_paper_btn, header .language_dropdown, 
+    color: #fff;
+  }  
   header nav.navbar .navbar-collapse{
     display: none;
   }
@@ -503,24 +510,44 @@
     border-radius: 10px;
   }
   header .header_top_menu{
-    padding-left: 0;
+    padding-left: 20px;
   }
-  header .header_top_menu ul.header_menu_bttn li{
-    float: none;
+  header .header_top_menu ul.header_menu_bttn li{    
     margin: 10px 0;
   }
-  header .header_top_menu ul.header_menu_bttn li .fa-close{
+  .white_paper_btn {
+    font-size: 17px;
+  }
+  header .header_top_menu ul.header_menu_bttn li.language_dropdown .nav-link {
+    padding: 3px 6px;
+    margin: 0 0px 0 5px;
+    font-size: 17px;
+  }
+  header .header_top_menu .header-social {
+    text-align: left;
+  }
+  .header-social {
+    width: 95%;
+  }
+  .header-social li {
+    padding-right: 8px;
+    margin-bottom: 30px;
+  }
+  .header-social li img {
+    width: 22px;
+  }
+  header .header_top_menu ul.header_menu_bttn li .menu_close {
     position: absolute;
     top: 8px;
     right: 8px;
     font-size: 26px;
   }
   header .header_top_menu ul.menus {
-    margin: 10% 0 0;
+    margin: 10% 0;
   }
   header .header_top_menu ul.menus li {
     margin: 14px 0;
-    font-size: 16px;
+    font-size: 16px;    
   }
   .fadeInUp, .fadeInLeft, .fadeInRight {
     opacity: 1;
@@ -635,6 +662,12 @@
     margin: 10px auto;
     max-width: 100px;
  }
+ header .header_top_menu {
+  max-width: 350px;
+ }
+ header .header_top_menu ul.header_menu_bttn li .menu_close:before, header .header_top_menu ul.header_menu_bttn li .menu_close:after {
+  height: 24px;
+ }
 }
 
 @media screen and (max-width: 767px) and (orientation: landscape){
@@ -697,18 +730,15 @@
 }
 
 @media screen and (max-width: 480px){
-  .header_subscribe form {
+  .header_newsletter {
     max-width: 90%;
     margin: 0 auto 80px; 
   }
-  .header_subscribe form .form-control {
-    padding: 12px 30px;
-  }
-  .header_subscribe form .form-control, .kimlic_mailing_list input[type="email"] {
+  .header_newsletter .form-control, .kimlic_mailing_list input[type="email"] {
     border-radius: 8px 8px 0 0;
     border-bottom-color: transparent;
   }
-  .header_subscribe form button, .kimlic_mailing_list button {
+  .header_newsletter button, .kimlic_mailing_list button {
     padding: 14px 20px;
     width: 100%;
     max-width: 100%;
