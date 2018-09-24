@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 47">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-size: 32px;
+        font-family: Muli-SemiBold, Muli;
+        font-weight: 600;
+        letter-spacing: -0.05em;
+      }
+    </style>
+  </defs>
+  <text id="Current_market_size_" data-name="Current market size
+" class="cls-1"><tspan x="0" y="26">Current market size</tspan></text>
+</svg>

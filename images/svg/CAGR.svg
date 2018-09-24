@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255 121">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0069d5;
+        font-size: 48px;
+        font-family: Muli-ExtraBold, Muli;
+        font-weight: 800;
+        letter-spacing: -0.05em;
+      }
+
+      .cls-2 {
+        font-size: 28px;
+      }
+    </style>
+  </defs>
+  <text id="CAGR" class="cls-1"><tspan x="29.909" y="38">+ 13,7 % </tspan><tspan class="cls-2"><tspan x="89.5" y="74">CAGR</tspan></tspan></text>
+</svg>

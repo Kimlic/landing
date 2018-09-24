@@ -7,268 +7,226 @@
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Kimlic</title>
-
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- fontawesome link -->
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-
-
     <!-- style css -->
     <link rel="stylesheet" type="text/css" href="css/font-face.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/responsive_style.css">
-
   </head>
   <body>
     <header id="header" class="fixed-top">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="images/svg/kimlik_page_top_logo.svg" height="55"></a>
-        <button class="navbar-toggler menubar_xs" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand" href="index.html"><img src="images/svg/logo.svg" height="115"></a>
+          <button class="navbar-toggler menubar_xs" type="button">
           <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link white_paper_btn" href="presentations/Kimlic-KYC-For-Banking.pdf" target="_blank">White Paper</a>
-            </li>
-            <li class="nav-item dropdown language_dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="flag"><img src="images/svg/us_flag.svg"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="Sidebar">
+            <ul class="navbar-nav ml-auto menus">
+              <li>
+                <a href="#kimlic_token_distribution" class="active">Token Sale</a>
+              </li>
+              <li>
+                <a href="#technologies">Technology</a>
+              </li>
+              <li>
+                <a href="#road_map">Roadmap</a>
+              </li>
+              <li>
+                <a href="#technical_team">Team</a>
+              </li>
+              <li>
+                <a href="#Documents">Docs</a>
+              </li>              
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link white_paper_btn" href="presentations/Kimlic-KYC-For-Banking.pdf" target="_blank">Product</a>
+              </li>
+              <li class="nav-item dropdown language_dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 English
                 <i class="fa fa-angle-down"></i>
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#"><span class="flag"><img src="images/svg/us_flag.svg"></span>Turkish</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a href="javascript:void(0);" id="menubar">
-                <img src="images/svg/menu_button.svg" width="40" height="35" />
-              </a>
-            </li>
-          </ul>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Turkish</a>
+                </div>
+              </li>              
+            </ul>
+            <a href="javascript:void(0);" class="close_navbar"><i class="fa fa-close"></i></a>
+          </div>
         </div>
-        </div>
-      </nav>
-
-      <!-- Top menus start -->
-      <div class="header_top_menu navbar">
-        <ul class="navbar-nav header_menu_bttn">
-          <li class="nav-item">
-            <a class="nav-link white_paper_btn" href="presentations/Kimlic-KYC-For-Banking.pdf" target="_blank">White Paper</a>
-          </li>
-          <li class="nav-item dropdown language_dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="flag"><img src="images/svg/us_flag.svg"></span>
-              English
-              <i class="fa fa-angle-down"></i>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#"><span class="flag"><img src="images/svg/us_flag.svg"></span>Turkish</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a href="javascript:void(0);" class="menu-trigger">
-              <i class="menu_close"></i>
-            </a>
-          </li>
-        </ul>
-        <div class="clearfix"></div>
-        <ul class="menus">
-          <li>
-            <a href="#partners">Technologies</a>
-          </li>
-          <li>
-            <a href="#our_Solution">Solution</a>
-          </li>
-          <li>
-            <a href="#Kimlic_features">Features</a>
-          </li>
-          <li>
-            <a href="#how_kimlic_work">Works</a>
-          </li>
-          <li>
-            <a href="#road_map">Road Map</a>
-          </li>
-          <li>
-            <a href="#technical_team">Team</a>
-          </li>
-        </ul>
-
-        <ul class="header-social">
-          <li>
-            <a href="http://www.t.me/kimlic" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNi42ODkgMjIuMzg1Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojYjg4OWZmO30uYntmaWxsOiM5OTU1Zjc7fS5je2ZpbGw6I2UyYzdmZjt9PC9zdHlsZT48L2RlZnM+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ4LjkxOSAtNzIuMTgpIj48cGF0aCBjbGFzcz0iYSIgZD0iTTg1LjI3Miw5OS40M2MtLjgsMC0uNjYtLjMtLjkzNC0xLjA1N0w4Miw5MC42NzcsMTAwLDgwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjYuMzE1IC02LjIyKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNOTgsMTUwLjY2NGExLjU3MiwxLjU3MiwwLDAsMCwxLjIyNy0uNjE0bDMuMjcyLTMuMTgyLTQuMDgyLTIuNDYxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzkuMDQzIC01Ny40NTUpIi8+PHBhdGggY2xhc3M9ImMiIGQ9Ik01OS4zNzQsODYuOTUzbDkuODkxLDcuMzA3YzEuMTI5LjYyMywxLjk0My4zLDIuMjI0LTEuMDQ4TDc1LjUxNiw3NC4yNGMuNDEyLTEuNjUzLS42My0yLjQtMS43MS0xLjkxMkw1MC4xNjUsODEuNDQ0Yy0xLjYxNC42NDctMS42LDEuNTQ4LS4yOTQsMS45NDlsNi4wNjcsMS44OTQsMTQuMDQ1LTguODYxYy42NjMtLjQsMS4yNzItLjE4Ni43NzIuMjU3IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDApIi8+PC9nPjwvc3ZnPg=="></a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/kimlicapp/" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMS45OTUgMjEuOTk1Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZTJjN2ZmO308L3N0eWxlPjwvZGVmcz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3Ni41NjQgLTYwLjU4NikiPjxwYXRoIGNsYXNzPSJhIiBkPSJNMTEuNzQ4LDIxLjk5NUgxLjIxNEExLjIxMywxLjIxMywwLDAsMSwwLDIwLjc4MVYxLjIxNEExLjIxNSwxLjIxNSwwLDAsMSwxLjIxNCwwSDIwLjc4MWExLjIxNSwxLjIxNSwwLDAsMSwxLjIxMywxLjIxNFYyMC43ODFhMS4yMTMsMS4yMTMsMCwwLDEtMS4yMTMsMS4yMTRIMTUuMTc2VjEzLjQ3OGgyLjg1OWwuNDI4LTMuMzJIMTUuMTc2VjguMDM5YTEuNzQxLDEuNzQxLDAsMCwxLC4zMDYtMS4xNjgsMS4xMTQsMS4xMTQsMCwwLDEsLjUtLjMzLDIuNTU3LDIuNTU3LDAsMCwxLC44MzgtLjExN2wxLjc1OCwwVjMuNDU0YTIzLjIzNSwyMy4yMzUsMCwwLDAtMi41NjEtLjEzMiw0LjI2OSw0LjI2OSwwLDAsMC0zLjA4NSwxLjEyOSwzLjc0NywzLjc0NywwLDAsMC0uODc0LDEuMzc0LDUuNDA5LDUuNDA5LDAsMCwwLS4zMTEsMS44ODV2Mi40NDdIOC44ODJ2My4zMmgyLjg2NnY4LjUxN1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03Ni41NjQgNjAuNTg3KSIvPjwvZz48L3N2Zz4="></a>
-          </li>
-          <li>
-            <a href="https://twitter.com/Kimlicapp" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNi43MzUgMjEuNzE2Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZTJjN2ZmO308L3N0eWxlPjwvZGVmcz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMC4wMDEgLTU3LjQ0MSkiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAxIDU3LjQ0MSkiPjxwYXRoIGNsYXNzPSJhIiBkPSJNMjYuNzM2LDYwLjAxYTEwLjk1MiwxMC45NTIsMCwwLDEtMy4xNDkuODY0QTUuNTA3LDUuNTA3LDAsMCwwLDI2LDU3Ljg0MmExMS4wNTYsMTEuMDU2LDAsMCwxLTMuNDg1LDEuMzMxLDUuNDg5LDUuNDg5LDAsMCwwLTkuMzQ1LDUsMTUuNTcsMTUuNTcsMCwwLDEtMTEuMy01LjczLDUuNDkxLDUuNDkxLDAsMCwwLDEuNyw3LjMyMSw1LjQ4NSw1LjQ4NSwwLDAsMS0yLjQ4NC0uNjg4di4wNjhhNS40OSw1LjQ5LDAsMCwwLDQuNCw1LjM3OCw1LjU1NSw1LjU1NSwwLDAsMS0xLjQ0NS4xOTJBNS4yNjQsNS4yNjQsMCwwLDEsMyw3MC42MTIsNS40ODcsNS40ODcsMCwwLDAsOC4xMiw3NC40MjFhMTEsMTEsMCwwLDEtNi44MTEsMi4zNDRBMTEuNjU1LDExLjY1NSwwLDAsMSwwLDc2LjY5YTE1LjUsMTUuNSwwLDAsMCw4LjQwNiwyLjQ2NywxNS41LDE1LjUsMCwwLDAsMTUuNi0xNS42bC0uMDE4LS43MUExMC45NTIsMTAuOTUyLDAsMCwwLDI2LjczNiw2MC4wMVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjAwMSAtNTcuNDQxKSIvPjwvZz48L2c+PC9zdmc+"></a>
-          </li>
-          <li>
-            <a href="https://medium.com/@kimlic" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMi42OTIgMTguMDE1Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZTJjN2ZmO2ZpbGwtcnVsZTpldmVub2RkO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTIuNjkxLDYuNjc1QS44NzguODc4LDAsMCwwLDIuNCw1LjkzNEwuMjg2LDMuMzgxVjNINi44NjVMMTEuOTUsMTQuMTUyLDE2LjQyMSwzaDYuMjcydi4zODFMMjAuODgxLDUuMTE4YS41MzEuNTMxLDAsMCwwLS4yLjUwOVYxOC4zODlhLjUzLjUzLDAsMCwwLC4yLjUwOGwxLjc2OSwxLjczN3YuMzgxaC04Ljl2LS4zODFsMS44MzMtMS43NzljLjE4LS4xOC4xOC0uMjMzLjE4LS41MDhWOC4wMzFsLTUuMSwxMi45NDJIOS45OEw0LjA0Nyw4LjAzMXY4LjY3NGExLjIsMS4yLDAsMCwwLC4zMjguOTk1bDIuMzg0LDIuODkxdi4zODJIMHYtLjM4MkwyLjM4NCwxNy43YTEuMTUyLDEuMTUyLDAsMCwwLC4zMDctLjk5NVY2LjY3NVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTMpIi8+PC9zdmc+"></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/company/kimlic/" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMS41MTIgMjEuNTEyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZTJjN2ZmO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTE5LjkyNSwwSDEuNTkxQTEuNTY2LDEuNTY2LDAsMCwwLDAsMS41NDFWMTkuOTdhMS41NjYsMS41NjYsMCwwLDAsMS41ODksMS41NDJIMTkuOTI1YTEuNTY2LDEuNTY2LDAsMCwwLDEuNTg4LTEuNTQyVjEuNTQxQTEuNTY1LDEuNTY1LDAsMCwwLDE5LjkyNSwwWk02LjUyNCwxOC4wMDdIMy4yNzNWOC4yOTVoMy4yNVpNNC45LDYuOTY4SDQuODc3YTEuNjgzLDEuNjgzLDAsMSwxLC4wNDItMy4zNTZBMS42ODQsMS42ODQsMCwxLDEsNC45LDYuOTY4Wk0xOC4yNCwxOC4wMDdIMTQuOTkxdi01LjJjMC0xLjMwNi0uNDcxLTIuMi0xLjY0Ni0yLjJBMS43NzUsMS43NzUsMCwwLDAsMTEuNjc4LDExLjhhMi4xNzEsMi4xNzEsMCwwLDAtLjEwOC43ODd2NS40MjVIOC4zMjFzLjA0My04LjgsMC05LjcxMkgxMS41N1Y5LjY3MUEzLjIyNywzLjIyNywwLDAsMSwxNC41LDguMDY2YzIuMTM5LDAsMy43NDIsMS4zODcsMy43NDIsNC4zNzJ2NS41NjlaTTExLjU0OSw5LjdsLjAyMS0uMDMxVjkuN1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjAwMiAwKSIvPjwvc3ZnPg=="></a>
-          </li>
-          <li>
-            <a href="#" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMi4zOSAyMS44MzgiPjxkZWZzPjxzdHlsZT4uYXtmaWxsOiNlMmM3ZmY7fTwvc3R5bGU+PC9kZWZzPjxwYXRoIGNsYXNzPSJhIiBkPSJNMTEuMTk1LDBBMTEuMiwxMS4yLDAsMCwwLDcuNjU2LDIxLjgxOGMuNTU5LjEuNzQtLjI0My43NC0uNTM4VjE5LjJjLTMuMTE0LjY3Ny0zLjc2Mi0xLjMyMS0zLjc2Mi0xLjMyMUEyLjk2NSwyLjk2NSwwLDAsMCwzLjM5LDE2LjIzNmMtMS4wMTYtLjcuMDc3LS42OC4wNzctLjY4QTIuMzUsMi4zNSwwLDAsMSw1LjE4MywxNi43MWEyLjM4MywyLjM4MywwLDAsMCwzLjI1OC45MywyLjM3NSwyLjM3NSwwLDAsMSwuNzExLTEuNWMtMi40ODYtLjI4NS01LjEtMS4yNDQtNS4xLTUuNTMzYTQuMzMzLDQuMzMzLDAsMCwxLDEuMTUzLTMsNC4wMjcsNC4wMjcsMCwwLDEsLjEwOS0yLjk2M3MuOTQtLjMsMy4wOCwxLjE0N2ExMC42MTEsMTAuNjExLDAsMCwxLDUuNjA2LDBjMi4xMzctMS40NDgsMy4wNzYtMS4xNDcsMy4wNzYtMS4xNDdhNC4wMjMsNC4wMjMsMCwwLDEsLjExLDIuOTYzLDQuMzIxLDQuMzIxLDAsMCwxLDEuMTUyLDNjMCw0LjMtMi42MTksNS4yNDctNS4xMTEsNS41MjRhMi42NzYsMi42NzYsMCwwLDEsLjc2OCwyLjA3M3YzLjA3MmMwLC4zLjE3OS42NDcuNzQ3LjUzN0ExMS4yLDExLjIsMCwwLDAsMTEuMTk1LDBaIi8+PC9zdmc+"></a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/channel/UCF0YhIvdhKNkNoMQtV5WQsw" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAxOCI+PGRlZnM+PHN0eWxlPi5he2ZpbGw6I2UyYzdmZjt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImEiIGQ9Ik0xOS42MTUsMy4xODRjLTMuNi0uMjQ2LTExLjYzMS0uMjQ1LTE1LjIzLDBDLjQ4OCwzLjQ1LjAyOSw1LjgsMCwxMmMuMDI5LDYuMTg1LjQ4NCw4LjU0OSw0LjM4NSw4LjgxNiwzLjYuMjQ1LDExLjYyNi4yNDYsMTUuMjMsMEMyMy41MTIsMjAuNTUsMjMuOTcxLDE4LjIsMjQsMTIsMjMuOTcxLDUuODE1LDIzLjUxNiwzLjQ1MSwxOS42MTUsMy4xODRaTTksMTZWOGw4LDMuOTkzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtMykiLz48L3N2Zz4="></a>
-          </li>
-          <li>
-            <a href="#" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5he2ZpbGw6I2UyYzdmZjt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImEiIGQ9Ik0xNC4yMzgsMTUuMzQ4YS4yMTUuMjE1LDAsMCwxLDAsLjMwNiwzLjA0NSwzLjA0NSwwLDAsMS0yLjIzMS42ODdsLS4wMDgsMC0uMDA4LDBhMy4wNDIsMy4wNDIsMCwwLDEtMi4yMzEtLjY4OC4yMTQuMjE0LDAsMCwxLDAtLjMwNS4yMTkuMjE5LDAsMCwxLC4zMDcsMCwyLjY1MywyLjY1MywwLDAsMCwxLjkyNC41NjFsLjAwOCwwLC4wMDgsMGEyLjY1NiwyLjY1NiwwLDAsMCwxLjkyNC0uNTYxQS4yMTkuMjE5LDAsMCwxLDE0LjIzOCwxNS4zNDhaTTEwLjgsMTIuOTNhLjkyMy45MjMsMCwxLDAtLjkyMi45MThBLjkyMi45MjIsMCwwLDAsMTAuOCwxMi45M1pNMjQsMTJBMTIsMTIsMCwxLDEsMTIsMCwxMiwxMiwwLDAsMSwyNCwxMlptLTUtLjEyOWExLjU0OCwxLjU0OCwwLDAsMC0yLjYyNC0xLjEwOEE3Ljk5Myw3Ljk5MywwLDAsMCwxMi4zMSw5LjU2OWwuODY1LTIuNzI0LDIuMzQzLjU0OSwwLC4wMzRBMS4yNzEsMS4yNzEsMCwxLDAsMTUuNiw2Ljk3bC0yLjUyNS0uNTkyYS4yMTYuMjE2LDAsMCwwLS4yNTcuMTQ1bC0uOTY1LDMuMDM4QTguMDg4LDguMDg4LDAsMCwwLDcuNiwxMC43NDIsMS41NDEsMS41NDEsMCwxLDAsNS43NjgsMTMuMmEyLjc3OSwyLjc3OSwwLDAsMC0uMDUuNWMwLDIuMjgxLDIuOCw0LjEzNyw2LjI1Myw0LjEzN3M2LjI1My0xLjg1Niw2LjI1My00LjEzN2EyLjc0NCwyLjc0NCwwLDAsMC0uMDQ0LS40NzJBMS41MzcsMS41MzcsMCwwLDAsMTksMTEuODcxWm0tNC44NzIuMTQxYS45MTkuOTE5LDAsMSwwLC45MjIuOTE5QS45MjEuOTIxLDAsMCwwLDE0LjEyOCwxMi4wMTJaIi8+PC9zdmc+"></a>
-          </li>
-        </ul>
-      </div>
-
+      </nav>      
     </header>
-
     <main>
       <section id="header_banner">
         <div class="header_subscribe animated animatedFadeInUp">
-          <h1>Your Blockchain Passport <br/>for Crypto & Banking </h1>
-          <h3>Blockchain Based Digital KYC Ecosystem.</h3>
-          <h3>Join Our Private ICO</h3>          
-
-          <div class="header_newsletter">
-	          <div class="form-group">
-		          <div id="mc_embed_signup">
-		            <form action="https://kimlic.us16.list-manage.com/subscribe/post?u=deb6943cd054577c249471517&amp;id=84114b7665" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletter-signup validate" target="_blank" novalidate>
-		                <div id="mc_embed_signup_scroll">
-		                  <div class="mc-field-group">
-		                    <!-- <label for="mce-EMAIL"></label> -->
-		                    <input placeholder="Your Email" type="email" value="" name="EMAIL" class="form-control required email" id="">
-		                    <div class="clear">
-		                      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn-success">
-		                    </div>
-		                  </div>
-		                  <div id="mce-responses" class="clear">
-		                    <div class="response" id="mce-error-response" style="display:none"></div>
-		                    <div class="response" id="mce-success-response" style="display:none"></div>
-		                  </div>
-		                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-		                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_deb6943cd054577c249471517_84114b7665" tabindex="-1" value=""></div>
-		                  <div class="clear"></div>
-		                </div>
-		            </form>
-			        </div>
-			        <!-- <script src="js/jquery.min.js"></script> -->
-			        <script type="text/javascript" src="js/mc-validate.js"></script>
-			        <script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='BIRTHDAY';ftypes[3]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-			      	<!--End mc_embed_signup-->
-			      </div>
-		      </div>
-
+          <h1>Instant On-Boarding to <br/><b>Crypto & Banking</b></h1>
+          <h3 id="countdown"></h3>
+          <div class="bar m-auto px-3">
+            <div class="Background_bar clearfix">
+              <div class="light_purple_Bar float-left" style="width: 17%">
+                <span class="Soft-Cap"><b>Soft Cap</b>  4,000 ETH</span>
+              </div>
+              <div class="purple_bar float-left" style="width: 65%">
+                <span class="float-right ETH">25338 ETH</span>
+                <span class="Hard-Cap "><b>Hard Cap</b>  30,000 ETH</span>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="get-token">GET KIM TOKENS</a>
           <div class="mobile-app animated animatedFadeInUp">
-            <img src="images/svg/mobile_App.svg">
+            <img src="images/svg/mobile-app.svg">
           </div>
         </div>
       </section>
-
       <section id="partners">
-       <div class="container">
-         <h1 class="title animated animatedFadeInUp">Do KYC Once, Never Again !</h1>
-         <h3 class="subtitle animated animatedFadeInUp">Kimlic is a private blockchain that enables sharing proof of KYC <br>between businesses and institutions by permission of individuals.</h3>
-         <br><br>
-
-         <div class="animated animatedFadeInUp">
-           <h1 class="title">Technologies & Partners</h1>
-           <br><br>
-           <div class="row align-items-center">
-             <div class="col-md-2 col-sm-2 col-6">
-               <a href="javascript:void(0);"><img src="images/partner/ethereum_alliance_logo.svg"></a>        
-             </div>
-             <div class="col-md-2 col-sm-2 col-6">
-               <a href="javascript:void(0);"><img src="images/partner/OpenID_logo.svg"></a>        
-             </div>
-             <div class="col-md-2 col-sm-2 col-6">
-               <a href="javascript:void(0);"><img src="images/partner/quorum_logo.svg" width="100"></a>            
-             </div>
-             <div class="col-md-2 col-sm-2 col-6">
-               <a href="javascript:void(0);"><img src="images/partner/microsoft_azure_logo.svg"></a>        
-             </div>
-             <div class="col-md-2 col-sm-2 col-6">
-               <a href="javascript:void(0);"><img src="images/partner/koop_logo.svg" width="140"></a>        
-             </div>
-             <div class="col-md-2 col-sm-2 col-6">
-               <a href="javascript:void(0);"><img src="images/partner/ratel_logo.svg"></a>        
-             </div>
-           </div>
-           <br>
-           <div class="row align-items-center">
-           	<div class="col-md-3 col-sm-3 col-12"></div>
-             <div class="col-md-2 col-sm-2 col-6">
-               <a href="javascript:void(0);"><img src="images/partner/elixir_logo.svg" width="200"></a>        
-             </div>
-             <div class="col-md-2 col-sm-2 col-6">
-               <a href="javascript:void(0);"><img src="images/partner/linspark_logo.svg" width="100"></a>        
-             </div>
-             <div class="col-md-2 col-sm-2 col-12">
-               <a href="javascript:void(0);"><img src="images/partner/lostar_logo.svg" width="220"></a>        
-             </div>
-             <div class="col-md-3 col-sm-3 col-12"></div>
-           </div>    
-         </div>
-         <br><br><br><br>
-       </div>
-     </section>
-
+        <div class="container">
+          <h1 class="title animated animatedFadeInUp">Do KYC Once, Never Again !</h1>
+          <h3 class="subtitle animated animatedFadeInUp">Kimlic is a private blockchain that enables sharing proof of KYC <br>between businesses and institutions by permission of individuals.</h3>
+          <div class="row">
+            <div class="col-lg-3 col-12 col-sm-3 col-md-3">
+              <div class="review-box">
+                <h1>4.6</h1>
+                <img src="images/star-four.png">
+                <hr>
+                <img src="images/ico_holder_logo.png">
+              </div>
+            </div>
+            <div class="col-lg-3 col-12 col-sm-3 col-md-3">
+              <div class="review-box">
+                <h1>4.6</h1>
+                <img src="images/star-four-and-half.png">
+                <hr>
+                <img src="images/track_ico_logo.png">
+              </div>
+            </div>
+            <div class="col-lg-3 col-12 col-sm-3 col-md-3">
+              <div class="review-box">
+                <h1>4.4</h1>
+                <img src="images/star-four-and-half.png">
+                <hr>
+                <img src="images/ico_hot_list_logo.png">
+              </div>
+            </div>
+            <div class="col-lg-3 col-12 col-sm-3 col-md-3">
+              <div class="review-box">
+                <h1>4.3</h1>
+                <img src="images/star-four-and-half.png">
+                <hr>
+                <img src="images/icobench_logo.png">
+              </div>
+            </div>
+          </div>
+          <br><br>
+          <div class="animated animatedFadeInUp" id="technologies">
+            <h1 class="title">Technologies & Partners</h1>
+            <br><br>
+            <div class="row align-items-center">
+              <div class="col-md-2 col-sm-2 col-6">
+                <a href="javascript:void(0);"><img src="images/partner/ethereum_alliance_logo.svg"></a>        
+              </div>
+              <div class="col-md-2 col-sm-2 col-6">
+                <a href="javascript:void(0);"><img src="images/partner/OpenID_logo.svg"></a>        
+              </div>
+              <div class="col-md-2 col-sm-2 col-6">
+                <a href="javascript:void(0);"><img src="images/partner/quorum_logo.svg" width="100"></a>            
+              </div>
+              <div class="col-md-2 col-sm-2 col-6">
+                <a href="javascript:void(0);"><img src="images/partner/microsoft_azure_logo.svg"></a>        
+              </div>
+              <div class="col-md-2 col-sm-2 col-6">
+                <a href="javascript:void(0);"><img src="images/partner/koop_logo.svg" width="140"></a>        
+              </div>
+              <div class="col-md-2 col-sm-2 col-6">
+                <a href="javascript:void(0);"><img src="images/partner/ratel_logo.svg"></a>        
+              </div>
+            </div>
+            <br>
+            <div class="row align-items-center">
+              <div class="col-md-3 col-sm-3 col-12"></div>
+              <div class="col-md-2 col-sm-2 col-6">
+                <a href="javascript:void(0);"><img src="images/partner/elixir_logo.svg" width="200"></a>        
+              </div>
+              <div class="col-md-2 col-sm-2 col-6">
+                <a href="javascript:void(0);"><img src="images/partner/linspark_logo.svg" width="100"></a>        
+              </div>
+              <div class="col-md-2 col-sm-2 col-12">
+                <a href="javascript:void(0);"><img src="images/partner/lostar_logo.svg" width="220"></a>        
+              </div>
+              <div class="col-md-3 col-sm-3 col-12"></div>
+            </div>
+          </div>
+          <br><br><br><br>
+        </div>
+      </section>
+      <!-- market size section start -->
+      <section id="market_size" class="market_size animated animatedFadeInUp">
+        <div class="container">
+          <h1 class="title">Market Size</h1>
+          <h3>Identity Validation and KYC Business</h3>
+          <h3><small>* grandviewresearch - Identity and access management market</small></h3>
+          <div class="row mt-lg-5 mt-md-5 mt-sm-5 pb-lg-5 pb-md-5 pb-sm-5">
+            <div class="market-img text-center mt-4 px-3">
+              <img src="images/market-size1.png">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- market size section end -->
       <section id="problem_statement" class="animated animatedFadeInUp">
         <div class="container">
-          <h1 class="title">Problem Statement</h1>
-          <div class="row">
+          <h1 class="title">Problems & Challenges</h1>
+          <div class="row mt-lg-5 mt-md-5 mt-sm-5">
             <div class="col-md-6 col-lg-6 col-12">
               <div class="row">
-                <div class="col-md-4 col-lg-4 col-12">
-                  <img src="images/svg/data_security.svg" height="200">
+                <div class="col-md-4 col-lg-4 col-12 text-center">
+                  <img src="images/svg/ID_data_protection.svg" height="107">
                 </div>
                 <div class="col-md-8 col-lg-8 col-12">
                   <h2>Inadequate</h2>
-                  <h3>ID Data Protection</h3>
+                  <h3>ID data Protection</h3>
                   <p>Take picture of your eID or passport and complete your profile with personal information</p>
                 </div>
               </div>
             </div>
             <div class="col-md-6 col-lg-6 col-12">
               <div class="row">
-                <div class="col-md-4 col-lg-4 col-12">
-                  <img src="images/svg/Registry_process.svg" height="200">
+                <div class="col-md-4 col-lg-4 col-12 text-center">
+                  <img src="images/svg/Registration_process_icon.svg" height="109">
                 </div>
                 <div class="col-md-8 col-lg-8 col-12">
-                  <h2>Out Dated</h2>
-                  <h3>Registration Processes</h3>
+                  <h2>Outdated</h2>
+                  <h3>Registration processes</h3>
                   <p>Take picture of your eID or passport and complete your profile with personal information</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row animated animatedFadeInUp">
+          <div class="row animated animatedFadeInUp mt-lg-5 mt-md-5">
             <div class="col-md-6 col-lg-6 col-12">
               <div class="row">
-                <div class="col-md-4 col-lg-4 col-12">
-                  <img src="images/svg/Non_transparent_ID.svg" height="150">
+                <div class="col-md-4 col-lg-4 col-12 text-center">
+                  <img src="images/svg/Non_transparent_icon.svg" height="143">
                 </div>
                 <div class="col-md-8 col-lg-8 col-12">
                   <h2>Non-Transparent</h2>
-                  <h3>Identity Data Sharing</h3>
+                  <h3>Identity Data sharing</h3>
                   <p>Take picture of your eID or passport and complete your profile with personal information</p>
                 </div>
               </div>
             </div>
             <div class="col-md-6 col-lg-6 col-12">
               <div class="row">
-                <div class="col-md-4 col-lg-4 col-12">
-                  <img src="images/svg/money.svg" height="150">
+                <div class="col-md-4 col-lg-4 col-12 text-center">
+                  <img src="images/svg/Expensive_icon.svg" height="105">
                 </div>
                 <div class="col-md-8 col-lg-8 col-12">
                   <h2>Expensive</h2>
-                  <h3>Centralized KYC Solutions</h3>
+                  <h3>Centralized KYC solutions</h3>
                   <p>Take picture of your eID or passport and complete your profile with personal information</p>
                 </div>
               </div>
@@ -276,47 +234,52 @@
           </div>
         </div>
       </section>
-      <!-- Our Solution section start -->
-      <section id="our_Solution" class="our_solution animated animatedFadeInUp">
-        <div class="container">
-          <h1 class="title">Our Solution</h1>
-          <h3 class="subtitle">Kimlic is a private blockchain that enables sharing proof of KYC<br>between businesses and institutions by permission of individuals.</h3>                  
-        </div>
-        <div class="solution-img">
-          <div class="container">
-            <div class="row text-center animated animatedFadeInUp">
-              <img src="images/svg/SOLUTION_CHART.svg">
-            </div>
-          </div>
-        </div>
-      </section><!-- Our Solution section end -->
-
       <!-- Kimlic Features section start -->
       <section id="Kimlic_features" class="Kimlic_features animated animatedFadeInUp">
         <div class="container">
-          <h1 class="title">Kimlic Features</h1>
-          <div class="row">
+          <h1 class="title">Our solutions</h1>          
+          <div id="how_kimlic_work" class="Kimlic_works animated animatedFadeInUp">
+            <div class="container text-center">              
+              <div id="pills-tabContent">
+                <div id="Financial_Institutions">
+                  <div class="row mt-0 mt-lg-5 mt-md-5">
+                    <div class="col-md-6 col-sm-6 col-xs-12 work_section">
+                      <h1 class="title animated animatedFadeInUp pb-0">How Kimlic works ?</h1>
+                      <p class="subtitle animated animatedFadeInUp">Kimlic is a private blockchain that enables sharing proof of KYC between businesses and institutions by permission of individuals and Let them instantly onboarding. This Decentralized Identity Ecosystem</p>
+                      <div class="learn-more-button">
+                        <button class="btn show_all_team">Learn More</button>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 text-center">
+                      <img src="images/video_preivew.png">
+                    </div>
+                  </div>
+                </div>                
+              </div>
+            </div>
+          </div>          
+          <div class="row kimlic-work-row">
             <div class="col-md-1 col-lg-1 col-12"></div>
             <div class="col-md-5 col-lg-5 col-12">
-              <img src="images/svg/Full_control_ID.svg">
+              <img src="images/svg/Full_control_ID_illustration.svg">
               <div class="text-left">
                 <h2><span>Full Control</span> <br>on your Digital ID</h2>
                 <p>Take picture of your eID or passport <br>and complete your profile with <br>personal information</p>
               </div>
             </div>
-            <div class="col-md-1 col-lg-1 col-12"></div>            
+            <div class="col-md-1 col-lg-1 col-12"></div>
             <div class="col-md-5 col-lg-5 col-12">
-              <img src="images/svg/Decentralized_KYC.svg">
+              <img src="images/svg/Decentralized_KYC_illustration.svg">
               <div class="text-left">
                 <h2><span>Universal</span> <br>Decentralized KYC</h2>
                 <p>Take picture of your eID or passport <br>and complete your profile with <br>personal information</p>
               </div>
-            </div>            
+            </div>
           </div>
-          <div class="row animated animatedFadeInUp">
+          <div class="row animated animatedFadeInUp kimlic-work-row">
             <div class="col-md-1 col-lg-1 col-12"></div>
             <div class="col-md-5 col-lg-5 col-12">
-              <img src="images/svg/multiple_Profiles.svg">
+              <img src="images/svg/Multiple_Profiles_illustration.svg">
               <div class="text-left">
                 <h2><span>Multiple Profiles</span> <br>on a Single Device</h2>
                 <p>Take picture of your eID or passport <br>and complete your profile with <br>personal information</p>
@@ -324,17 +287,17 @@
             </div>
             <div class="col-md-1 col-lg-1 col-12"></div>
             <div class="col-md-5 col-lg-5 col-12">
-              <img src="images/svg/anonymous_connection.svg">              
+              <img src="images/svg/Anonymous_connection_illustration.svg">              
               <div class="text-left">
                 <h2><span>Anonymous</span> <br>Connection Available</h2>
                 <p>Take picture of your eID or passport <br>and complete your profile with <br>personal information</p>
               </div>
-            </div>            
+            </div>
           </div>
-          <div class="row animated animatedFadeInUp">
+          <div class="row animated animatedFadeInUp kimlic-work-row">
             <div class="col-md-1 col-lg-1 col-12"></div>
             <div class="col-md-5 col-lg-5 col-12">
-              <img src="images/svg/Updates_information.svg">
+              <img src="images/svg/Updates_information_illustration.svg">
               <div class="text-left">
                 <h2><span>Update Information</span> <br>Everywhere at Once</h2>
                 <p>Take picture of your eID or passport <br>and complete your profile with <br>personal information</p>
@@ -342,7 +305,7 @@
             </div>
             <div class="col-md-1 col-lg-1 col-12"></div>
             <div class="col-md-5 col-lg-5 col-12">
-              <img src="images/svg/Integrated_Video_ID.svg">
+              <img src="images/svg/Integrated_Video_ID_illustration.svg">
               <div class="text-left">
                 <h2><span>Integrated</span> <br>Video ID Verification</h2>
                 <p>Take picture of your eID or passport <br>and complete your profile with <br>personal information</p>
@@ -350,89 +313,319 @@
             </div>
           </div>
         </div>
-      </section><!-- Kimlic Features section end -->
-
-      <!-- How Kimlic works section start -->
-      <section id="how_kimlic_work" class="Kimlic_works animated animatedFadeInUp">
-        <div class="container text-center">
-          <h1 class="title">How Kimlic Works</h1>
-
-
-          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" id="Financial_Institutions_tab" data-toggle="pill" href="#Financial_Institutions" role="tab" aria-controls="Financial_Institutions" aria-selected="true">For Financial Institutions</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" id="Frustrated_End_Users_tab" data-toggle="pill" href="#Frustrated_End_Users" role="tab" aria-controls="Frustrated_End_Users" aria-selected="false">For Frustrated End Users</a>
-            </li>
-          </ul>
-          <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="Financial_Institutions" role="tabpanel" aria-labelledby="Financial_Institutions_tab">
-
-              <div class="row mt-5">
-                <div class="col-md-6 col-sm-6 col-xs-12 text-center">
-                  <img src="images/svg/Financial_institutions_illustration.svg">
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12 work_section text-left">
-                  <div class="row">
-                    <span class="line"></span>
-                    <span class="circle">1</span>
-                    <h3>Integrate with Kimlic API</h3>
-                    <p>Businesses can easily integrate with Kimlic API <br>without any Blockchain programming experience</p>
-                  </div>
-                  <div class="row">
-                    <span class="line"></span>
-                    <span class="circle">2</span>
-                    <h3>Get KYC proofs from Blockchain</h3>
-                    <p>Access previous KYC data and its proves on <br>Blockchain with permission of onboarding <br>customer online </p>
-                  </div>
-                  <div class="row">
-                    <span class="circle">3</span>
-                    <h3>Decrease CDD / KYC Costs and <br>onboarding Barriers</h3>
-                    <p>No need to re-do KYC thanks to attestation of <br>other Kimlic partners and banks.</p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <div class="tab-pane fade" id="Frustrated_End_Users" role="tabpanel" aria-labelledby="Frustrated_End_Users_tab">
-
-              <div class="row mt-5">
-                <div class="col-md-6 col-sm-6 col-xs-12 text-center">
-                  <img src="images/svg/End_users_illustration.svg">
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12 work_section text-left">
-                  <div class="row">
-                    <span class="line"></span>
-                    <span class="circle">1</span>
-                    <h3>Complete your Kimlic Profile</h3>
-                    <p>Take picture of your eID or passport and complete <br>your profile with personal information.</p>
-                  </div>
-                  <div class="row">
-                    <span class="line"></span>
-                    <span class="circle">2</span>
-                    <h3>Scan QR Code in Bank Office</h3>
-                    <p>Prove your identity with a bank officer for once <br>by granting "read" permission to your personal id <br>supporting documents.</p>
-                  </div>
-                  <div class="row">
-                    <span class="circle">3</span>
-                    <h3>Use Kimlic to Self-Sovereign Online <br>and Earn Tokens</h3>
-                    <p>Now, you no longer need to complete KYC again. <br>Frictionlessly, register for ICO's, Crypto Exchanges <br>and even banks. </p>
-                    <p>Each time you will be rewarded by Kimlic Tokens.</p>
-                  </div>
-                </div>
-              </div>
-
+      </section>
+      <!-- Kimlic Features section end -->
+      <!-- Our Solution section start -->
+      <section id="our_Solution" class="our_solution animated animatedFadeInUp">
+        <div class="container">
+          <h1 class="title">Digital Identity Verification Ecosystem</h1>
+          <h3 class="subtitle">Developers, Experts and Users all connected by the platform in a joint mission to take<br/> the load off developers by offloading everything that can be automated.</h3>
+        </div>
+        <div class="solution-img">
+          <div class="container">
+            <div class="row align-items-center animated animatedFadeInUp">
+              <img src="images/SOLUTION_CHART.png">
             </div>
           </div>
-
         </div>
-      </section><!-- How Kimlic works section end -->
-
+      </section>
+      <!-- Our Solution section end -->
+      <!-- Advisors Board section start -->
+      <section id="advisors_board" class="advisors_board mt-5 animated animatedFadeInUp closed">
+        <div class="container">
+          <h1 class="title">Advisors <br> <span>Kimlic is proud to be supported by experts in Identity, Blockchain and Security</span></h1>
+          <div class="all_advisors">
+            <div class="row mt-5">
+              <div class="col-md-3 col-lg-3 col-12">
+                <div class="team_img">
+                  <img src="images/advisors/Rooly_eliezerov_photo.png">
+                  <a href="https://www.linkedin.com/in/eerikaleksiaaltonen/" class="link"><img src="images/advisors/Linkedin_blue_icon.png"></a>
+                </div>
+                <p>
+                  Rooly Eliezerov<br><span>Customer ID Management</span>
+                  <ul class="advisors_logo">
+                    <li><img src="images/advisors/White_SAP_logo.png"></li>
+                    <li><img src="images/advisors/White_Gigya_Logo.png"></li>
+                  </ul>
+                </p>
+              </div>
+              <div class="col-md-3 col-lg-3 col-12">
+                <div class="team_img">
+                  <img src="images/advisors/sally_eaves_photo.png">
+                  <a href="#" class="link"><img src="images/advisors/Linkedin_blue_icon.png"></a>
+                </div>
+                <p>
+                  Sally Eaves<br><span>Technology Advisor</span>
+                  <ul class="advisors_logo">
+                    <li><img src="images/advisors/white_forbes_logo.png"></li>
+                    <li><img src="images/advisors/white_GBA_logo.png"></li>
+                  </ul>
+                </p>
+              </div>
+              <div class="col-md-3 col-lg-3 col-12">
+                <div class="team_img">
+                  <img src="images/advisors/Andrew_hindle_photo.png">
+                  <a href="#" class="link"><img src="images/advisors/Linkedin_blue_icon.png"></a>
+                </div>
+                <p>
+                  Andrew Hindle<br><span>Identity and Security</span>
+                  <ul class="advisors_logo">
+                    <li><img src="images/advisors/White_PingIdentity_Logo.png"></li>
+                  </ul>
+                </p>
+              </div>
+              <div class="col-md-3 col-lg-3 col-12">
+                <div class="team_img">
+                  <img src="images/advisors/Stylianos_kampakis_photo.png">
+                  <a href="#" class="link"><img src="images/advisors/Linkedin_blue_icon.png"></a>
+                </div>
+                <p>
+                  Dr. Stylianos Kampakis<br><span>Blockchain Analyst</span>
+                  <ul class="advisors_logo">
+                    <li><img src="images/advisors/White_University_College_London_logo.png"></li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-lg-3 col-12">
+                <div class="team_img">
+                  <img src="images/advisors/Brian_chappell_photo.png">
+                  <a href="#" class="link"><img src="images/advisors/Linkedin_blue_icon.png"></a>
+                </div>
+                <p>
+                  Brian Chappell<br><span>Enterprise Architecture</span>
+                  <ul class="advisors_logo">
+                    <li><img src="images/advisors/White_BeyondTrustLogo.png"></li>
+                  </ul>
+                </p>
+              </div>
+              <div class="col-md-3 col-lg-3 col-12">
+                <div class="team_img">
+                  <img src="images/advisors/Rooly_eliezerov_photo.png">
+                  <a href="#" class="link"><img src="images/advisors/Linkedin_blue_icon.png"></a>
+                </div>
+                <p>
+                  Marcella Atzori PhD.<br><span>Blockchain & GovTech</span>
+                  <ul class="advisors_logo">
+                    <li><img src="images/advisors/White_European_Commission_logo.png"></li>
+                    <li><img src="images/advisors/White_University_College_London_logo.png"></li>
+                  </ul>
+                </p>
+              </div>
+              <div class="col-md-3 col-lg-3 col-12">
+                <div class="team_img">
+                  <img src="images/advisors/prof_kai_lung_hui_photo.png">
+                  <a href="#" class="link"><img src="images/advisors/Linkedin_blue_icon.png"></a>
+                </div>
+                <p>
+                  Prof. Kai-Lung Hui<br><span>Information Privacy & Security</span>
+                  <ul class="advisors_logo">
+                    <li><img src="images/advisors/White_HKUST-BUSINESS-SCHOOL_logo.png"></li>
+                  </ul>
+                </p>
+              </div>
+              <div class="col-md-3 col-lg-3 col-12">
+                <div class="team_img">
+                  <img src="images/advisors/Joe_andrieu_photo.png">
+                  <a href="#" class="link"><img src="images/advisors/Linkedin_blue_icon.png"></a>
+                </div>
+                <p>
+                  Joe Andrieu<br><span>Requirement Engineering</span>
+                  <ul class="advisors_logo">
+                    <li><img src="images/advisors/White_caltech_logo.png"></li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+            <div class="row more-advisors">
+              <div class="col-md-3 col-lg-3 col-12">
+                <div class="team_img">
+                  <img src="images/advisors/Rooly_eliezerov_photo.png">
+                  <a href="https://www.linkedin.com/in/eerikaleksiaaltonen/" class="link"><img src="images/advisors/Linkedin_blue_icon.png"></a>
+                </div>
+                <p>
+                  Rooly Eliezerov<br><span>Customer ID Management</span>
+                  <ul class="advisors_logo">
+                    <li><img src="images/advisors/White_SAP_logo.png"></li>
+                    <li><img src="images/advisors/White_Gigya_Logo.png"></li>
+                  </ul>
+                </p>
+              </div>
+              <div class="col-md-3 col-lg-3 col-12">
+                <div class="team_img">
+                  <img src="images/advisors/sally_eaves_photo.png">
+                  <a href="#" class="link"><img src="images/advisors/Linkedin_blue_icon.png"></a>
+                </div>
+                <p>
+                  Sally Eaves<br><span>Technology Advisor</span>
+                  <ul class="advisors_logo">
+                    <li><img src="images/advisors/white_forbes_logo.png"></li>
+                    <li><img src="images/advisors/white_GBA_logo.png"></li>
+                  </ul>
+                </p>
+              </div>
+              <div class="col-md-3 col-lg-3 col-12">
+                <div class="team_img">
+                  <img src="images/advisors/Andrew_hindle_photo.png">
+                  <a href="#" class="link"><img src="images/advisors/Linkedin_blue_icon.png"></a>
+                </div>
+                <p>
+                  Andrew Hindle<br><span>Identity and Security</span>
+                  <ul class="advisors_logo">
+                    <li><img src="images/advisors/White_PingIdentity_Logo.png"></li>
+                  </ul>
+                </p>
+              </div>
+              <div class="col-md-3 col-lg-3 col-12">
+                <div class="team_img">
+                  <img src="images/advisors/Stylianos_kampakis_photo.png">
+                  <a href="#" class="link"><img src="images/advisors/Linkedin_blue_icon.png"></a>
+                </div>
+                <p>
+                  Dr. Stylianos Kampakis<br><span>Blockchain Analyst</span>
+                  <ul class="advisors_logo">
+                    <li><img src="images/advisors/White_University_College_London_logo.png"></li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row text-center">
+            <button class="btn show_all_team" id="show_all_advisors">Show all advisors</button>
+          </div>
+        </div>
+      </section>
+      <!-- Advisors Board section end -->
+      <!-- Technical team section start -->
+      <section id="technical_team" class="technical_team animated animatedFadeInUp closed">
+        <div class="all_team">
+          <div class="container">
+            <h1 class="title">Technical Team <br> <span>Meet talented people behind the scene.</span></h1>
+            <div class="row mt-5">
+              <div class="col-md-3 col-lg-3 col-12">
+                <div class="team_img">
+                  <img src="images/team/Gokhan_seckin_photo.png">
+                  <a href="https://www.linkedin.com/in/eerikaleksiaaltonen/" class="link"><img src="images/team/White_LinkedIn_icon.png"></a>
+                </div>
+                <p>
+                  Gökhan Seçkin<br><span>CEO</span>
+                </p>
+              </div>
+              <div class="col-md-3 col-lg-3 col-12">
+                <div class="team_img">
+                  <img src="images/team/ilker_oguz_photo.png">
+                  <a href="#" class="link"><img src="images/team/White_LinkedIn_icon.png"></a>
+                </div>
+                <p>
+                  İlker Oguz<br><span>Chief Business Development</span>
+                </p>
+              </div>
+              <div class="col-md-3 col-lg-3 col-12">
+                <div class="team_img">
+                  <img src="images/team/dmytro_nasyrov_photo.png">
+                  <a href="#" class="link"><img src="images/team/White_LinkedIn_icon.png"></a>
+                </div>
+                <p>
+                  Dmytro Nasyrov<br><span>CTO</span>
+                </p>
+              </div>
+              <div class="col-md-3 col-lg-3 col-12">
+                <div class="team_img">
+                  <img src="images/team/murat_nalcaci_photo.png">
+                  <a href="#" class="link"><img src="images/team/White_LinkedIn_icon.png"></a>
+                </div>
+                <p>
+                  Murat T. Nalcaci<br><span>Head of Product</span>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 col-lg-3 col-12">
+                <div class="team_img">
+                  <img src="images/team/Vladimir_Yarovoy_photo.png">
+                  <a href="#" class="link"><img src="images/team/White_LinkedIn_icon.png"></a>
+                </div>
+                <p>
+                  Vladimir Yarovoy<br><span>Product Owner</span>
+                </p>
+              </div>
+              <div class="col-md-3 col-lg-3 col-12">
+                <div class="team_img">
+                  <img src="images/team/Alex_troush_photo.png">
+                  <a href="#" class="link"><img src="images/team/White_LinkedIn_icon.png"></a>
+                </div>
+                <p>
+                  Alex Troush<br><span>Blockchain Architect</span>
+                </p>
+              </div>
+              <div class="col-md-3 col-lg-3 col-12">
+                <div class="team_img">
+                  <img src="images/team/alex_yaroshevskii_photo.png">
+                  <a href="#" class="link"><img src="images/team/White_LinkedIn_icon.png"></a>
+                </div>
+                <p>
+                  Alex Yaroshevskii<br><span>Elixir Developer, DevOps</span>
+                </p>
+              </div>
+              <div class="col-md-3 col-lg-3 col-12">
+                <div class="team_img">
+                  <img src="images/team/pavel_vesnin_photo.png">
+                  <a href="#" class="link"><img src="images/team/White_LinkedIn_icon.png"></a>
+                </div>
+                <p>
+                  Pavel Vesnin<br><span>Elixir Backend Engineer</span>
+                </p>
+              </div>
+            </div>
+            <div class="row more-team">
+              <div class="col-md-3 col-lg-3 col-12">
+                <div class="team_img">
+                  <img src="images/team/Vladimir_Yarovoy_photo.png">
+                  <a href="#" class="link"><img src="images/team/White_LinkedIn_icon.png"></a>
+                </div>
+                <p>
+                  Vladimir Yarovoy<br><span>Product Owner</span>
+                </p>
+              </div>
+              <div class="col-md-3 col-lg-3 col-12">
+                <div class="team_img">
+                  <img src="images/team/Alex_troush_photo.png">
+                  <a href="#" class="link"><img src="images/team/White_LinkedIn_icon.png"></a>
+                </div>
+                <p>
+                  Alex Troush<br><span>Blockchain Architect</span>
+                </p>
+              </div>
+              <div class="col-md-3 col-lg-3 col-12">
+                <div class="team_img">
+                  <img src="images/team/alex_yaroshevskii_photo.png">
+                  <a href="#" class="link"><img src="images/team/White_LinkedIn_icon.png"></a>
+                </div>
+                <p>
+                  Alex Yaroshevskii<br><span>Elixir Developer, DevOps</span>
+                </p>
+              </div>
+              <div class="col-md-3 col-lg-3 col-12">
+                <div class="team_img">
+                  <img src="images/team/pavel_vesnin_photo.png">
+                  <a href="#" class="link"><img src="images/team/White_LinkedIn_icon.png"></a>
+                </div>
+                <p>
+                  Pavel Vesnin<br><span>Elixir Backend Engineer</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button class="btn show_all_team" id="show_all_team">Show All Kimlic Team</button>
+        </div>
+      </section>
+      <!-- Technical team section end -->    
       <!-- Documents section start -->
       <section id="Documents" class="kimlic_documents animated animatedFadeInUp">
         <div class="container">
-
           <div class="row">
             <div class="col-md-4 col-lg-4 col-12">
               <img src="images/svg/kimlic_white_paper_sml.svg">
@@ -440,34 +633,27 @@
             <div class="col-md-8 col-lg-8 col-12">
               <h1 class="title">Documents</h1>
               <h3>Built with blockchain technology. Kimlic enables sharing proof of KYC between businesses and institutions by permission of individuals</h3>
-
-              <h3>White Paper <a href="presentations/Kimlic-KYC-For-Banking.pdf" target="_blank" class="btn btn-primary pull-right">Download</a></h3>
-              <h3>Token Sales Policy <a href="#" class="btn btn-primary pull-right" target="_blank">Download</a></h3>
-              <h3>One Pager <a href="presentations/Kimlic-KYC-For-Banking-New.pdf" class="btn btn-primary pull-right" target="_blank">Download</a></h3>
+              <h3>White Paper <a href="presentations/Kimlic-KYC-For-Banking.pdf" target="_blank" class="btn btn-kimlic-pink pull-right">Download</a></h3>
+              <h3>Token Sales Policy <a href="#" class="btn btn-kimlic-pink pull-right" target="_blank">Download</a></h3>
+              <h3>One Pager <a href="presentations/Kimlic-KYC-For-Banking-New.pdf" class="btn btn-kimlic-pink pull-right" target="_blank">Download</a></h3>
             </div>
           </div>
-
-
         </div>
-      </section><!-- Documents section end -->
-
+      </section>
+      <!-- Documents section end -->
       <!-- Kimlic token distribution section start -->
       <section id="kimlic_token_distribution" class="kimlic_token_distribution animated animatedFadeInUp">
         <div class="container text-center">
-          
-          <h1 class="title">Kimlic Token Distribution <br><span>Token Supply: 100 Million KIM ERC-20 Token</span></h1>
-          <img class="mt-3" src="images/svg/Token_Distribution_Chart.svg">
-
+          <h1 class="title">Tokenomics<br><span>Token Supply: 100 Million KIM ERC-20 Token</span></h1>
+          <img class="mt-3" src="images/Token_Distribution_Chart.png">
         </div>
-      </section><!-- Kimlic token distribution section end -->
-
+      </section>
+      <!-- Kimlic token distribution section end -->
       <!-- Fund allocation section start -->
       <section id="fund_allocation" class="fund_allocation mt-5 animated animatedFadeInUp">
         <div class="container">
-          
           <h1 class="title">Funds Allocation</h1>
-          <img class="mt-3 ml-5" src="images/svg/Funds_Allocation_Chart.svg">
-
+          <img class="mt-3 ml-5" src="images/Funds_Allocation_Chart.png">
           <div class="row animated animatedFadeInUp">
             <div class="token_details_box">
               <h1 class="title">Token Details</h1>
@@ -483,24 +669,20 @@
                 <li>Private Sale Min. Purchase <span>10 ETH</span></li>
                 <li>Private Sale Max. Purchase <span>500 ETH</span></li>
                 <li>Decimal Places <span>18</span></li>
-                <li>Adjustable <span>Yes, All unsold tokens will be burned</span></li>
+                <li>Adjustable</li>
               </ul>
             </div>
           </div>
-
         </div>
-      </section><!-- Fund allocation section end -->
-
+      </section>
+      <!-- Fund allocation section end -->
       <!-- Road map section start -->
       <section id="road_map" class="road_map mt-5 animated animatedFadeInUp">
         <div class="container">
-          
           <h1 class="title">Road Map</h1>
-
           <div class="row road_map_main">
             <ul class="purple_year">
               <span class="year">2018</span>
-
               <li class="animated animatedFadeInLeft">
                 <div class="road_map_box purple">
                   <div class="top"></div>
@@ -512,7 +694,6 @@
                   <p>Kimlic Blockchain SmartContract v2.0</p>
                 </div>
               </li>
-
               <li class="animated animatedFadeInRight">
                 <div class="road_map_box purple">
                   <div class="top"></div>
@@ -526,7 +707,6 @@
                 </div>
                 <div class="clearfix"></div>
               </li>
-
               <li class="animated animatedFadeInLeft">
                 <div class="road_map_box purple">
                   <div class="top"></div>
@@ -538,7 +718,6 @@
                   <p>Kimlic Blockchain SmartContract v2.0</p>
                 </div>
               </li>
-
               <li class="animated animatedFadeInRight">
                 <div class="road_map_box purple">
                   <div class="top"></div>
@@ -551,12 +730,9 @@
                 </div>
                 <div class="clearfix"></div>
               </li>
-
             </ul>
-
             <ul class="blue_year">
               <span class="year">2019</span>
-
               <li class="animated animatedFadeInLeft">
                 <div class="road_map_box blue">
                   <div class="top"></div>
@@ -567,7 +743,6 @@
                   <p>Kimlic Whitehacking Competition</p>
                 </div>
               </li>
-
               <li class="animated animatedFadeInRight">
                 <div class="road_map_box blue">
                   <div class="top"></div>
@@ -579,7 +754,6 @@
                 </div>
                 <div class="clearfix"></div>
               </li>
-
               <li class="animated animatedFadeInLeft">
                 <div class="road_map_box blue">
                   <div class="top"></div>
@@ -590,7 +764,6 @@
                   <p>Kimlic Whitehacking Competition</p>
                 </div>
               </li>
-
               <li class="animated animatedFadeInRight">
                 <div class="road_map_box blue">
                   <div class="top"></div>
@@ -602,411 +775,196 @@
                 </div>
                 <div class="clearfix"></div>
               </li>
-
             </ul>
           </div>
-
         </div>
-      </section><!-- Road map section end -->
-
-      <!-- Technical team section start -->
-      <section id="technical_team" class="technical_team mt-5 animated animatedFadeInUp closed">
-      	<div class="all_team">
-	      	<div class="container">
-          	<h1 class="title">Technical Team <br> <span>Meet talented people behind the Scene. <br>( Alphabetically Ordered )</span></h1>          
-	          <div class="row mt-5">
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/team_img1.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/gokhanseckin/" class="link"><img src="images/svg/Purple_LinkedIn_icon.svg"></a> Gökhan Seçkin <br><span>CEO</span>
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/team_img2.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/ilkeroguz/" class="link"><img src="images/svg/Purple_LinkedIn_icon.svg"></a> İlker Oğuz <br><span>CCDO</span>
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/team_img3.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/muratnalcaci/" class="link"><img src="images/svg/Purple_LinkedIn_icon.svg"></a> Murat T. Nalçacı <br><span>Head of Product</span>
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/team_img4.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/alexzabolotniy/" class="link"><img src="images/svg/Purple_LinkedIn_icon.svg"></a> Alex Zabalotniy <br><span>Blockchain Developer</span>
-	              </p>
-	            </div>
-	          </div>
-
-	          <div class="row mt-5">
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/team_img5.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/elifpetekozlu/" class="link"><img src="images/svg/Purple_LinkedIn_icon.svg"></a> Elif Özlü <br><span>Legal Consultant</span>
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/team_img6.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/ibrahimoz/" class="link"><img src="images/svg/Purple_LinkedIn_icon.svg"></a> İbrahim Özdemir <br><span>Mobile App Developer</span>
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/team_img5.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/elifpetekozlu/" class="link"><img src="images/svg/Purple_LinkedIn_icon.svg"></a> Elif Özlü <br><span>Legal Consultant</span>
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/team_img6.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/ibrahimoz/" class="link"><img src="images/svg/Purple_LinkedIn_icon.svg"></a> İbrahim Özdemir <br><span>Mobile App Developer</span>
-	              </p>
-	            </div>
-	          </div>
-
-	          <div class="row mt-5">
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/team_img5.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/elifpetekozlu/" class="link"><img src="images/svg/Purple_LinkedIn_icon.svg"></a> Elif Özlü <br><span>Legal Consultant</span>
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/team_img6.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/ibrahimoz/" class="link"><img src="images/svg/Purple_LinkedIn_icon.svg"></a> İbrahim Özdemir <br><span>Mobile App Developer</span>
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/team_img5.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/elifpetekozlu/" class="link"><img src="images/svg/Purple_LinkedIn_icon.svg"></a> Elif Özlü <br><span>Legal Consultant</span>
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/team_img6.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/ibrahimoz/" class="link"><img src="images/svg/Purple_LinkedIn_icon.svg"></a> İbrahim Özdemir <br><span>Mobile App Developer</span>
-	              </p>
-	            </div>
-	          </div>
-
-	          <div class="row mt-5">
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/team_img1.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/gokhanseckin/" class="link"><img src="images/svg/Purple_LinkedIn_icon.svg"></a> Gökhan Seçkin <br><span>CEO</span>
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/team_img2.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/ilkeroguz/" class="link"><img src="images/svg/Purple_LinkedIn_icon.svg"></a> İlker Oğuz <br><span>CCDO</span>
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/team_img3.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/muratnalcaci/" class="link"><img src="images/svg/Purple_LinkedIn_icon.svg"></a> Murat T. Nalçacı <br><span>Head of Product</span>
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/team_img4.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/alexzabolotniy/" class="link"><img src="images/svg/Purple_LinkedIn_icon.svg"></a> Alex Zabalotniy <br><span>Blockchain Developer</span>
-	              </p>
-	            </div>
-	          </div>
-	        </div>	          
-        </div>        
-	      <div class="text-center bg-gray">
-          <button class="btn show_all_team" id="show_all_team">Show all Kimlic team</button>
-        </div>        
-      </section><!-- Technical team section end -->
-
-      <!-- Advisors Board section start -->
-      <section id="advisors_board" class="advisors_board mt-5 animated animatedFadeInUp closed">
+      </section>
+      <!-- Road map section end -->
+      <!-- Events attend section start -->
+      <section id="events_attend" class="events_attend mt-5 animated animatedFadeInUp">
         <div class="container">
-          
-          <h1 class="title">Advisors Board <br> <span>Kimlic is proud to be supported by experts in the Startup & Crypto Communities <br>( Alphabetically Ordered )</span></h1>
-
-          <div class="all_advisors">
-	          <div class="row mt-5">
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/advisors_board_img1.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/eerikaleksiaaltonen/" class="link"><img src="images/svg/Gray_LinkedIn_icon.svg"></a> Aleksi Aaltonen <br><span>Director of Business <br>Empirica Finland </span>
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/advisors_board_img2.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/akutsal/" class="link"><img src="images/svg/Gray_LinkedIn_icon.svg"></a> Arda Kutsal <br><span>Founder of Webrazzi</span>
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/advisors_board_img3.png">
-	              </div>
-	              <p>
-	                <a href="#" class="link"><img src="images/svg/Gray_LinkedIn_icon.svg"></a> Mustafa Baltacı <br><span>Advisor of Fintech Park</span>
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/advisors_board_img4.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/bitangel/" class="link"><img src="images/svg/Gray_LinkedIn_icon.svg"></a> Sam Onat Yılmaz <br><span>Founder of BitAngels</span>
-	              </p>
-	            </div>
-	          </div>
-
-	          <div class="row mt-5">
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/advisors_board_img5.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/gabrielzanko/" class="link"><img src="images/svg/Gray_LinkedIn_icon.svg"></a> Gabriel Zanko <br><span>Financial Advisor <br>22X Blockchain Fund </span>
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/advisors_board_img6.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/debune/" class="link"><img src="images/svg/Gray_LinkedIn_icon.svg"></a> Roberto Capodieci <br><span>Founder of <br>Blockchain Zoo</span>
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/advisors_board_img5.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/gabrielzanko/" class="link"><img src="images/svg/Gray_LinkedIn_icon.svg"></a> Gabriel Zanko <br><span>Financial Advisor <br>22X Blockchain Fund </span>
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/advisors_board_img6.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/debune/" class="link"><img src="images/svg/Gray_LinkedIn_icon.svg"></a> Roberto Capodieci <br><span>Founder of <br>Blockchain Zoo</span>
-	              </p>
-	            </div>
-	          </div>
-
-	          <div class="row mt-5">
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/advisors_board_img1.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/eerikaleksiaaltonen/" class="link"><img src="images/svg/Gray_LinkedIn_icon.svg"></a> Aleksi Aaltonen <br><span>Director of Business <br>Empirica Finland </span>
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/advisors_board_img2.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/akutsal/" class="link"><img src="images/svg/Gray_LinkedIn_icon.svg"></a> Arda Kutsal <br><span>Founder of Webrazzi</span>
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/advisors_board_img3.png">
-	              </div>
-	              <p>
-	                <a href="#" class="link"><img src="images/svg/Gray_LinkedIn_icon.svg"></a> Mustafa Baltacı <br><span>Advisor of Fintech Park</span>
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/advisors_board_img4.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/bitangel/" class="link"><img src="images/svg/Gray_LinkedIn_icon.svg"></a> Sam Onat Yılmaz <br><span>Founder of BitAngels</span>
-	              </p>
-	            </div>
-	          </div>
-
-	          <div class="row mt-5">
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/advisors_board_img5.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/gabrielzanko/" class="link"><img src="images/svg/Gray_LinkedIn_icon.svg"></a> Gabriel Zanko <br><span>Financial Advisor <br>22X Blockchain Fund </span>
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/advisors_board_img6.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/debune/" class="link"><img src="images/svg/Gray_LinkedIn_icon.svg"></a> Roberto Capodieci <br><span>Founder of <br>Blockchain Zoo</span>
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/advisors_board_img5.png">
-	              </div>
-	              <p>
-	                <a href="https://www.linkedin.com/in/gabrielzanko/" class="link"><img src="images/svg/Gray_LinkedIn_icon.svg"></a> Gabriel Zanko <br><span>Financial Advisor <br>22X Blockchain Fund </span>
-	              </p>
-	            </div>
-	            <div class="col-md-3 col-lg-3 col-12">
-	              <div class="team_img">
-	                <img src="images/team/advisors_board_img6.png">
-	              </div>
-	              <p>
-	               <a href="https://www.linkedin.com/in/debune/" class="link"><img src="images/svg/Gray_LinkedIn_icon.svg"></a> Roberto Capodieci <br><span>Founder of <br>Blockchain Zoo</span>
-	              </p>
-	            </div>
-	          </div>
-	        </div>
-
-          <div class="row text-center">
-            <button class="btn show_all_team" id="show_all_advisors">Show all advisors</button>
+          <h1 class="title">Events We Attend</h1>
+          <div class="row">
+            <div class="col-md-4 col-lg-4 col-12">
+              <div class="event-card">
+                <div class="event-card-head">
+                  <img src="images/svg/Token_fest_image.svg">  
+                </div>
+                <div class="event-card-body">
+                  <h5 class="mt-4 mb-3">World Blockchain Token Fest</h5>
+                  <div class="event-details">
+                    <label><img src="images/svg/calendar_icon.svg"> 4th March 2018</label><label><img src="images/svg/location_icon.svg"> Dubai</label>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="col-md-4 col-lg-4 col-12">
+              <div class="event-card">
+                <div class="event-card-head">
+                  <img src="images/svg/crypto_investor.svg">  
+                </div>
+                <div class="event-card-body">
+                  <h5 class="mt-4 mb-3">World Blockchain Token Fest</h5>
+                  <div class="event-details">
+                    <label><img src="images/svg/calendar_icon.svg"> 4th March 2018</label><label><img src="images/svg/location_icon.svg"> London</label>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="col-md-4 col-lg-4 col-12">
+              <div class="event-card">
+                <div class="event-card-head">
+                  <img src="images/svg/koop.svg">  
+                </div>
+                <div class="event-card-body">
+                  <h5 class="mt-4 mb-3">World Blockchain Token Fest</h5>
+                  <div class="event-details">
+                    <label><img src="images/svg/calendar_icon.svg"> 4th March 2018</label><label><img src="images/svg/location_icon.svg"> Istanbul</label>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-
         </div>
-      </section><!-- Advisors Board section end -->
-
+      </section>
+      <!-- Events attend section end -->
+      <!-- Events gallery section start -->
+      <section id="events_gallery" class="events_gallery mt-5 animated animatedFadeInUp">
+        <div class="container">
+          <h1 class="title">Events Gallery</h1>
+          <div class="row">
+            <div class="col-md-4 col-lg-4 col-12">
+              <div class="event-card">
+                <div class="event-card-head">
+                  <img src="images/svg/Token_fest_image.svg">  
+                </div>
+                <div class="event-card-body">
+                  <h5 class="mt-4 mb-3">World Blockchain Token Fest</h5>
+                  <div class="event-details">
+                    <label><img src="images/svg/calendar_icon.svg"> 4th March 2018</label><label><img src="images/svg/location_icon.svg"> Dubai</label>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="col-md-4 col-lg-4 col-12">
+              <div class="event-card">
+                <div class="event-card-head">
+                  <img src="images/svg/crypto_investor.svg">  
+                </div>
+                <div class="event-card-body">
+                  <h5 class="mt-4 mb-3">World Blockchain Token Fest</h5>
+                  <div class="event-details">
+                    <label><img src="images/svg/calendar_icon.svg"> 4th March 2018</label><label><img src="images/svg/location_icon.svg"> London</label>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <div class="col-md-4 col-lg-4 col-12">
+              <div class="event-card">
+                <div class="event-card-head">
+                  <img src="images/svg/koop.svg">  
+                </div>
+                <div class="event-card-body">
+                  <h5 class="mt-4 mb-3">World Blockchain Token Fest</h5>
+                  <div class="event-details">
+                    <label><img src="images/svg/calendar_icon.svg"> 4th March 2018</label><label><img src="images/svg/location_icon.svg"> Istanbul</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Events gallery section end -->
       <!-- Kimlic Mailing List section start -->
       <section id="kimlic_mailing_list" class="kimlic_mailing_list mt-5 animated animatedFadeInUp">
         <div class="container">
-          
           <h1 class="title">Kimlic Mailing List<br> <span>Subscribe to our email list to receive news and updates</span></h1>
-
           <div class="row">
             <!-- <div class="form-group">
               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your best email address here...">
               <button type="submit">SUBSCRIBE</button>
-            </div> -->
-
-						<div class="form-group">
-	            <!-- Begin MailChimp Signup Form -->
-			        <div id="mc_embed_signup">
-			            <form action="https://kimlic.us16.list-manage.com/subscribe/post?u=deb6943cd054577c249471517&amp;id=84114b7665" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletter-signup validate" target="_blank" novalidate>
-			                <div id="mc_embed_signup_scroll">
-			                  <div class="mc-field-group">
-			                    <!-- <label for="mce-EMAIL"></label> -->
-			                    <input placeholder="Your Email" type="email" value="" name="EMAIL" class="form-control required email" id="">
-			                    <div class="clear">
-			                      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn-success">
-			                    </div>
-			                  </div>
-			                  <div id="mce-responses" class="clear">
-			                    <div class="response" id="mce-error-response" style="display:none"></div>
-			                    <div class="response" id="mce-success-response" style="display:none"></div>
-			                  </div>
-			                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-			                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_deb6943cd054577c249471517_84114b7665" tabindex="-1" value=""></div>
-			                  <div class="clear"></div>
-			                </div>
-			            </form>
-			        </div>
-			        <!-- <script src="js/jquery.min.js"></script> -->
-			        <script type="text/javascript" src="js/mc-validate.js"></script>
-			        <script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='BIRTHDAY';ftypes[3]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-			      	<!--End mc_embed_signup-->
-			      </div>
+              </div> -->
+            <div class="form-group">
+              <!-- Begin MailChimp Signup Form -->
+              <div id="mc_embed_signup">
+                <form action="https://kimlic.us16.list-manage.com/subscribe/post?u=deb6943cd054577c249471517&amp;id=84114b7665" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletter-signup validate" target="_blank" novalidate>
+                  <div id="mc_embed_signup_scroll">
+                    <div class="mc-field-group">
+                      <!-- <label for="mce-EMAIL"></label> -->
+                      <input placeholder="Your Best Email Address Here..." type="email" value="" name="EMAIL" class="form-control required email" id="">
+                      <div class="clear">
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn-success">
+                      </div>
+                    </div>
+                    <div id="mce-responses" class="clear">
+                      <div class="response" id="mce-error-response" style="display:none"></div>
+                      <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_deb6943cd054577c249471517_84114b7665" tabindex="-1" value=""></div>
+                    <div class="clear"></div>
+                  </div>
+                </form>
+              </div>
+              <!-- <script src="js/jquery.min.js"></script> -->
+              <script type="text/javascript" src="js/mc-validate.js"></script>
+              <script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='BIRTHDAY';ftypes[3]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+              <!--End mc_embed_signup-->
+            </div>
           </div>
-
           <br><br>
-
         </div>
-      </section><!-- Kimlic Mailing List section end -->       
-
+      </section>
+      <!-- Kimlic Mailing List section end -->       
     </main>
-
     <!-- Footer section start -->
     <footer class="footer">
       <div class="container">
         <div class="row animated animatedFadeInUp">
-
           <div class="col-md-3 col-lg-3 col-12">
-            <a href="index.html"><img class="footer-logo" src="images/svg/Kimlic_Footer_logo.svg"></a>
-            <p>All rights reserved by <br>© Kimlic LCC.</p>
+            <h4>PRODUCTS</h4>
+            <ul class="products">
+              <li><a href="#">For Users</a></li>
+              <li><a href="#">For Business</a></li>
+            </ul>
           </div>
           <div class="col-md-3 col-lg-3 col-12">
             <h4>COMMUNITY</h4>
             <ul class="community">
               <li>
-                <a href="http://www.t.me/kimlic" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNi42ODkgMjIuMzg1Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojYjg4OWZmO30uYntmaWxsOiM5OTU1Zjc7fS5je2ZpbGw6I2UyYzdmZjt9PC9zdHlsZT48L2RlZnM+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQ4LjkxOSAtNzIuMTgpIj48cGF0aCBjbGFzcz0iYSIgZD0iTTg1LjI3Miw5OS40M2MtLjgsMC0uNjYtLjMtLjkzNC0xLjA1N0w4Miw5MC42NzcsMTAwLDgwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjYuMzE1IC02LjIyKSIvPjxwYXRoIGNsYXNzPSJiIiBkPSJNOTgsMTUwLjY2NGExLjU3MiwxLjU3MiwwLDAsMCwxLjIyNy0uNjE0bDMuMjcyLTMuMTgyLTQuMDgyLTIuNDYxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzkuMDQzIC01Ny40NTUpIi8+PHBhdGggY2xhc3M9ImMiIGQ9Ik01OS4zNzQsODYuOTUzbDkuODkxLDcuMzA3YzEuMTI5LjYyMywxLjk0My4zLDIuMjI0LTEuMDQ4TDc1LjUxNiw3NC4yNGMuNDEyLTEuNjUzLS42My0yLjQtMS43MS0xLjkxMkw1MC4xNjUsODEuNDQ0Yy0xLjYxNC42NDctMS42LDEuNTQ4LS4yOTQsMS45NDlsNi4wNjcsMS44OTQsMTQuMDQ1LTguODYxYy42NjMtLjQsMS4yNzItLjE4Ni43NzIuMjU3IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDApIi8+PC9nPjwvc3ZnPg=="> Telegram</a>
+                <a href="http://www.t.me/kimlic" target="_blank"><img src="images/svg/Telegram_icon.svg"> Telegram</a>
               </li>
               <li>
-                <a href="https://medium.com/@kimlic" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMi42OTIgMTguMDE1Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZTJjN2ZmO2ZpbGwtcnVsZTpldmVub2RkO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTIuNjkxLDYuNjc1QS44NzguODc4LDAsMCwwLDIuNCw1LjkzNEwuMjg2LDMuMzgxVjNINi44NjVMMTEuOTUsMTQuMTUyLDE2LjQyMSwzaDYuMjcydi4zODFMMjAuODgxLDUuMTE4YS41MzEuNTMxLDAsMCwwLS4yLjUwOVYxOC4zODlhLjUzLjUzLDAsMCwwLC4yLjUwOGwxLjc2OSwxLjczN3YuMzgxaC04Ljl2LS4zODFsMS44MzMtMS43NzljLjE4LS4xOC4xOC0uMjMzLjE4LS41MDhWOC4wMzFsLTUuMSwxMi45NDJIOS45OEw0LjA0Nyw4LjAzMXY4LjY3NGExLjIsMS4yLDAsMCwwLC4zMjguOTk1bDIuMzg0LDIuODkxdi4zODJIMHYtLjM4MkwyLjM4NCwxNy43YTEuMTUyLDEuMTUyLDAsMCwwLC4zMDctLjk5NVY2LjY3NVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTMpIi8+PC9zdmc+"> Medium</a>
+                <a href="https://medium.com/@kimlic" target="_blank"><img src="images/svg/Medium_icon.svg"> Medium</a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/company/kimlic/" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMS41MTIgMjEuNTEyIj48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZTJjN2ZmO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTE5LjkyNSwwSDEuNTkxQTEuNTY2LDEuNTY2LDAsMCwwLDAsMS41NDFWMTkuOTdhMS41NjYsMS41NjYsMCwwLDAsMS41ODksMS41NDJIMTkuOTI1YTEuNTY2LDEuNTY2LDAsMCwwLDEuNTg4LTEuNTQyVjEuNTQxQTEuNTY1LDEuNTY1LDAsMCwwLDE5LjkyNSwwWk02LjUyNCwxOC4wMDdIMy4yNzNWOC4yOTVoMy4yNVpNNC45LDYuOTY4SDQuODc3YTEuNjgzLDEuNjgzLDAsMSwxLC4wNDItMy4zNTZBMS42ODQsMS42ODQsMCwxLDEsNC45LDYuOTY4Wk0xOC4yNCwxOC4wMDdIMTQuOTkxdi01LjJjMC0xLjMwNi0uNDcxLTIuMi0xLjY0Ni0yLjJBMS43NzUsMS43NzUsMCwwLDAsMTEuNjc4LDExLjhhMi4xNzEsMi4xNzEsMCwwLDAtLjEwOC43ODd2NS40MjVIOC4zMjFzLjA0My04LjgsMC05LjcxMkgxMS41N1Y5LjY3MUEzLjIyNywzLjIyNywwLDAsMSwxNC41LDguMDY2YzIuMTM5LDAsMy43NDIsMS4zODcsMy43NDIsNC4zNzJ2NS41NjlaTTExLjU0OSw5LjdsLjAyMS0uMDMxVjkuN1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjAwMiAwKSIvPjwvc3ZnPg=="> Linkedin</a>
+                <a href="https://www.linkedin.com/company/kimlic/" target="_blank"><img src="images/svg/linkedin_icon.svg"> Linkedin</a>
               </li>
               <li>
-                <a href="#" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMi4zOSAyMS44MzgiPjxkZWZzPjxzdHlsZT4uYXtmaWxsOiNlMmM3ZmY7fTwvc3R5bGU+PC9kZWZzPjxwYXRoIGNsYXNzPSJhIiBkPSJNMTEuMTk1LDBBMTEuMiwxMS4yLDAsMCwwLDcuNjU2LDIxLjgxOGMuNTU5LjEuNzQtLjI0My43NC0uNTM4VjE5LjJjLTMuMTE0LjY3Ny0zLjc2Mi0xLjMyMS0zLjc2Mi0xLjMyMUEyLjk2NSwyLjk2NSwwLDAsMCwzLjM5LDE2LjIzNmMtMS4wMTYtLjcuMDc3LS42OC4wNzctLjY4QTIuMzUsMi4zNSwwLDAsMSw1LjE4MywxNi43MWEyLjM4MywyLjM4MywwLDAsMCwzLjI1OC45MywyLjM3NSwyLjM3NSwwLDAsMSwuNzExLTEuNWMtMi40ODYtLjI4NS01LjEtMS4yNDQtNS4xLTUuNTMzYTQuMzMzLDQuMzMzLDAsMCwxLDEuMTUzLTMsNC4wMjcsNC4wMjcsMCwwLDEsLjEwOS0yLjk2M3MuOTQtLjMsMy4wOCwxLjE0N2ExMC42MTEsMTAuNjExLDAsMCwxLDUuNjA2LDBjMi4xMzctMS40NDgsMy4wNzYtMS4xNDcsMy4wNzYtMS4xNDdhNC4wMjMsNC4wMjMsMCwwLDEsLjExLDIuOTYzLDQuMzIxLDQuMzIxLDAsMCwxLDEuMTUyLDNjMCw0LjMtMi42MTksNS4yNDctNS4xMTEsNS41MjRhMi42NzYsMi42NzYsMCwwLDEsLjc2OCwyLjA3M3YzLjA3MmMwLC4zLjE3OS42NDcuNzQ3LjUzN0ExMS4yLDExLjIsMCwwLDAsMTEuMTk1LDBaIi8+PC9zdmc+"> GitHub</a>
+                <a href="#" target="_blank"><img src="images/svg/Github_icon.svg"> GitHub</a>
               </li>
               <li>
-                <a href="https://www.facebook.com/kimlicapp/" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMS45OTUgMjEuOTk1Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZTJjN2ZmO308L3N0eWxlPjwvZGVmcz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg3Ni41NjQgLTYwLjU4NikiPjxwYXRoIGNsYXNzPSJhIiBkPSJNMTEuNzQ4LDIxLjk5NUgxLjIxNEExLjIxMywxLjIxMywwLDAsMSwwLDIwLjc4MVYxLjIxNEExLjIxNSwxLjIxNSwwLDAsMSwxLjIxNCwwSDIwLjc4MWExLjIxNSwxLjIxNSwwLDAsMSwxLjIxMywxLjIxNFYyMC43ODFhMS4yMTMsMS4yMTMsMCwwLDEtMS4yMTMsMS4yMTRIMTUuMTc2VjEzLjQ3OGgyLjg1OWwuNDI4LTMuMzJIMTUuMTc2VjguMDM5YTEuNzQxLDEuNzQxLDAsMCwxLC4zMDYtMS4xNjgsMS4xMTQsMS4xMTQsMCwwLDEsLjUtLjMzLDIuNTU3LDIuNTU3LDAsMCwxLC44MzgtLjExN2wxLjc1OCwwVjMuNDU0YTIzLjIzNSwyMy4yMzUsMCwwLDAtMi41NjEtLjEzMiw0LjI2OSw0LjI2OSwwLDAsMC0zLjA4NSwxLjEyOSwzLjc0NywzLjc0NywwLDAsMC0uODc0LDEuMzc0LDUuNDA5LDUuNDA5LDAsMCwwLS4zMTEsMS44ODV2Mi40NDdIOC44ODJ2My4zMmgyLjg2NnY4LjUxN1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC03Ni41NjQgNjAuNTg3KSIvPjwvZz48L3N2Zz4="> Facebook</a>
+                <a href="https://www.facebook.com/kimlicapp/" target="_blank"><img src="images/svg/Facebook_icon.svg"> Facebook</a>
               </li>
               <li>
-                <a href="https://www.youtube.com/channel/UCF0YhIvdhKNkNoMQtV5WQsw" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAxOCI+PGRlZnM+PHN0eWxlPi5he2ZpbGw6I2UyYzdmZjt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImEiIGQ9Ik0xOS42MTUsMy4xODRjLTMuNi0uMjQ2LTExLjYzMS0uMjQ1LTE1LjIzLDBDLjQ4OCwzLjQ1LjAyOSw1LjgsMCwxMmMuMDI5LDYuMTg1LjQ4NCw4LjU0OSw0LjM4NSw4LjgxNiwzLjYuMjQ1LDExLjYyNi4yNDYsMTUuMjMsMEMyMy41MTIsMjAuNTUsMjMuOTcxLDE4LjIsMjQsMTIsMjMuOTcxLDUuODE1LDIzLjUxNiwzLjQ1MSwxOS42MTUsMy4xODRaTTksMTZWOGw4LDMuOTkzWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtMykiLz48L3N2Zz4="> Youtube</a>
+                <a href="https://www.youtube.com/channel/UCF0YhIvdhKNkNoMQtV5WQsw" target="_blank"><img src="images/svg/Youtube_icon.svg"> Youtube</a>
               </li>
               <li>
-                <a href="https://twitter.com/Kimlicapp" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNi43MzUgMjEuNzE2Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZTJjN2ZmO308L3N0eWxlPjwvZGVmcz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMC4wMDEgLTU3LjQ0MSkiPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAxIDU3LjQ0MSkiPjxwYXRoIGNsYXNzPSJhIiBkPSJNMjYuNzM2LDYwLjAxYTEwLjk1MiwxMC45NTIsMCwwLDEtMy4xNDkuODY0QTUuNTA3LDUuNTA3LDAsMCwwLDI2LDU3Ljg0MmExMS4wNTYsMTEuMDU2LDAsMCwxLTMuNDg1LDEuMzMxLDUuNDg5LDUuNDg5LDAsMCwwLTkuMzQ1LDUsMTUuNTcsMTUuNTcsMCwwLDEtMTEuMy01LjczLDUuNDkxLDUuNDkxLDAsMCwwLDEuNyw3LjMyMSw1LjQ4NSw1LjQ4NSwwLDAsMS0yLjQ4NC0uNjg4di4wNjhhNS40OSw1LjQ5LDAsMCwwLDQuNCw1LjM3OCw1LjU1NSw1LjU1NSwwLDAsMS0xLjQ0NS4xOTJBNS4yNjQsNS4yNjQsMCwwLDEsMyw3MC42MTIsNS40ODcsNS40ODcsMCwwLDAsOC4xMiw3NC40MjFhMTEsMTEsMCwwLDEtNi44MTEsMi4zNDRBMTEuNjU1LDExLjY1NSwwLDAsMSwwLDc2LjY5YTE1LjUsMTUuNSwwLDAsMCw4LjQwNiwyLjQ2NywxNS41LDE1LjUsMCwwLDAsMTUuNi0xNS42bC0uMDE4LS43MUExMC45NTIsMTAuOTUyLDAsMCwwLDI2LjczNiw2MC4wMVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjAwMSAtNTcuNDQxKSIvPjwvZz48L2c+PC9zdmc+"> Twitter</a>
+                <a href="https://twitter.com/Kimlicapp" target="_blank"><img src="images/svg/twitter_icon.svg"> Twitter</a>
               </li>
               <li>
-                <a href="#" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGRlZnM+PHN0eWxlPi5he2ZpbGw6I2UyYzdmZjt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImEiIGQ9Ik0xNC4yMzgsMTUuMzQ4YS4yMTUuMjE1LDAsMCwxLDAsLjMwNiwzLjA0NSwzLjA0NSwwLDAsMS0yLjIzMS42ODdsLS4wMDgsMC0uMDA4LDBhMy4wNDIsMy4wNDIsMCwwLDEtMi4yMzEtLjY4OC4yMTQuMjE0LDAsMCwxLDAtLjMwNS4yMTkuMjE5LDAsMCwxLC4zMDcsMCwyLjY1MywyLjY1MywwLDAsMCwxLjkyNC41NjFsLjAwOCwwLC4wMDgsMGEyLjY1NiwyLjY1NiwwLDAsMCwxLjkyNC0uNTYxQS4yMTkuMjE5LDAsMCwxLDE0LjIzOCwxNS4zNDhaTTEwLjgsMTIuOTNhLjkyMy45MjMsMCwxLDAtLjkyMi45MThBLjkyMi45MjIsMCwwLDAsMTAuOCwxMi45M1pNMjQsMTJBMTIsMTIsMCwxLDEsMTIsMCwxMiwxMiwwLDAsMSwyNCwxMlptLTUtLjEyOWExLjU0OCwxLjU0OCwwLDAsMC0yLjYyNC0xLjEwOEE3Ljk5Myw3Ljk5MywwLDAsMCwxMi4zMSw5LjU2OWwuODY1LTIuNzI0LDIuMzQzLjU0OSwwLC4wMzRBMS4yNzEsMS4yNzEsMCwxLDAsMTUuNiw2Ljk3bC0yLjUyNS0uNTkyYS4yMTYuMjE2LDAsMCwwLS4yNTcuMTQ1bC0uOTY1LDMuMDM4QTguMDg4LDguMDg4LDAsMCwwLDcuNiwxMC43NDIsMS41NDEsMS41NDEsMCwxLDAsNS43NjgsMTMuMmEyLjc3OSwyLjc3OSwwLDAsMC0uMDUuNWMwLDIuMjgxLDIuOCw0LjEzNyw2LjI1Myw0LjEzN3M2LjI1My0xLjg1Niw2LjI1My00LjEzN2EyLjc0NCwyLjc0NCwwLDAsMC0uMDQ0LS40NzJBMS41MzcsMS41MzcsMCwwLDAsMTksMTEuODcxWm0tNC44NzIuMTQxYS45MTkuOTE5LDAsMSwwLC45MjIuOTE5QS45MjEuOTIxLDAsMCwwLDE0LjEyOCwxMi4wMTJaIi8+PC9zdmc+"> Reddit</a>
+                <a href="#" target="_blank"><img src="images/svg/Reddit_icon.svg"> Reddit</a>
               </li>
             </ul>
           </div>
           <div class="col-md-3 col-lg-3 col-12">
-            <h4>Company</h4>
+            <h4>RESOURCES</h4>
             <ul class="company">
-              <li><a href="#technical_team">Our Team</a></li>
-              <li><a href="#">Contact US</a></li>
-              <li><a href="#">We are Hiring</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Github</a></li>
+              <li><a href="#">Waffel</a></li>
+              <li><a href="#">Swagger API</a></li>
             </ul>
           </div>
           <div class="col-md-3 col-lg-3 col-12">
@@ -1020,89 +978,22 @@
             </p>
           </div>
         </div>
-
-      </div>
-    </footer><!-- Footer section end -->
-
+        <div class="row animated animatedFadeInUp">
+          <div class="col-md-12">
+            <a href="index.html"><img class="footer-logo" src="images/svg/Kimlic_Footer_logo.svg"></a>
+            <!-- <p>All rights reserved by <br>© Kimlic LCC.</p> -->
+          </div>
+        </div>
+      </div> 
+    </footer>
+    <!-- Footer section end -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
     <!-- Animation JS -->
     <script src="js/waypoints.min.js"></script>
     <script src="js/scripts.js"></script>
-
-    <script async type="text/javascript">
-
-      jQuery(document).ready(function($) {
-        $('.animatedFadeInUp').waypoint(function() {
-          $(this).addClass('fadeInUp');
-        }, { offset: '90%' });
-
-        $('.animatedFadeInLeft').waypoint(function() {
-          $(this).addClass('fadeInLeft');
-        }, { offset: '90%' });
-
-        $('.animatedFadeInRight').waypoint(function() {
-          $(this).addClass('fadeInRight');
-        }, { offset: '90%' });
-
-
-        $("#menubar, .menubar_xs").click(function(){
-          $(".header_top_menu").addClass("open");
-        });
-
-        $(".header_top_menu .menu_close").click(function(){
-          $(".header_top_menu").removeClass("open");
-        });
-
-        $(".menus li a").each(function(){
-          $(this).click(function(){
-            $(".header_top_menu").removeClass("open"); 
-          });
-        });
-
-        $('.menus li a[href^="#"], .company li a[href^="#"]').on('click', function (e) {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname){
-            e.preventDefault();
-
-            var target = this.hash,
-            $target = $(target);
-            var header = $('#header .navbar').height();
-
-            $('html, body').stop().animate({
-              'scrollTop': $target.offset().top - header
-            }, 900, 'swing', function () {
-            });
-          }
-        });
-
-        $("#show_all_team").click(function(){
-        	$(this).hide();
-        	$("#technical_team").removeClass("closed");
-        	$("#technical_team").addClass("open");        	
-        });
-
-        $("#show_all_advisors").click(function(){
-        	$(this).hide();
-        	$("#advisors_board").removeClass("closed");
-        	$("#advisors_board").addClass("open");
-        });
-
-      });
-
-
-      $(window).scroll(function(){
-        if ($(window).scrollTop() >= 100) {
-          $('#header').addClass('fixed-header');
-        }
-        else {
-          $('#header').removeClass('fixed-header');
-        }
-      });
-
-    </script> 
-
+    <script src="js/custom.min.js"></script> 
   </body>
 </html>

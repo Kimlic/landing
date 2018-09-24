@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 226 94">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-size: 64px;
+        font-family: Muli-ExtraBold, Muli;
+        font-weight: 800;
+        letter-spacing: -0.05em;
+      }
+
+      .cls-2 {
+        filter: url(#_5.7_B_);
+      }
+    </style>
+    <filter id="_5.7_B_" x="0" y="0" width="226" height="94" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <text id="_5.7_B_2" data-name="$ 5.7 B " class="cls-1" transform="translate(9 8)"><tspan x="0" y="51">$ 5.7 B </tspan></text>
+  </g>
+</svg>

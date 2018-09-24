@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 354 235">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e9551f;
+      }
+    </style>
+  </defs>
+  <rect id="orange_background" class="cls-1" width="354" height="235" rx="10"/>
+</svg>

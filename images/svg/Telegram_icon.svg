@@ -1,1 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.689 22.385"><defs><style>.a{fill:#b889ff;}.b{fill:#9955f7;}.c{fill:#e2c7ff;}</style></defs><g transform="translate(-48.919 -72.18)"><path class="a" d="M85.272,99.43c-.8,0-.66-.3-.934-1.057L82,90.677,100,80" transform="translate(-26.315 -6.22)"/><path class="b" d="M98,150.664a1.572,1.572,0,0,0,1.227-.614l3.272-3.182-4.082-2.461" transform="translate(-39.043 -57.455)"/><path class="c" d="M59.374,86.953l9.891,7.307c1.129.623,1.943.3,2.224-1.048L75.516,74.24c.412-1.653-.63-2.4-1.71-1.912L50.165,81.444c-1.614.647-1.6,1.548-.294,1.949l6.067,1.894,14.045-8.861c.663-.4,1.272-.186.772.257" transform="translate(0 0)"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.161 31.168">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d3d3d3;
+      }
+
+      .cls-2 {
+        fill: #b7b7b7;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="telegram_icon" transform="translate(-266.753 -257.514)">
+    <path id="path" class="cls-1" d="M86.556,107.053c-1.107,0-.919-.418-1.3-1.472L82,94.867,107.06,80" transform="translate(194.173 179.74)"/>
+    <path id="Path_4564" data-name="Path 4564" class="cls-2" d="M98,153.119a2.189,2.189,0,0,0,1.709-.854l4.556-4.43-5.683-3.427" transform="translate(182.73 133.675)"/>
+    <path id="Path_4565" data-name="Path 4565" class="cls-3" d="M63.477,92.749l13.771,10.175c1.572.867,2.706.418,3.1-1.459l5.606-26.416c.574-2.3-.877-3.345-2.381-2.662L50.654,85.079c-2.247.9-2.234,2.155-.41,2.713l8.447,2.636L78.247,78.091c.923-.56,1.771-.259,1.075.358" transform="translate(217.834 185.333)"/>
+  </g>
+</svg>
