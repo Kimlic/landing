@@ -44,6 +44,12 @@ img {
 .fixed-header {
   background: #1776d1;
 }
+.fixed-header .navbar {
+    padding: 0 2rem;
+}
+.fixed-header .navbar-brand {
+  padding: 0;
+}
 .menus li {
   padding: 0 20px;
 }
@@ -310,12 +316,13 @@ img {
   font-family: 'mulilight';
 }
 .kimlic_documents{
-  background: url(../images/svg/documents_bg.svg);
+  background: url(../images/svg/doc_bg.svg);
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 1200px;
+  min-height: 940px;
   margin-top: 80px;
-  padding: 50px 0;
+  padding: 120px 0 0;
   color: var(--white);
   position: relative;
   font-family: 'mulilight';
@@ -792,7 +799,7 @@ img {
 footer.footer{
   padding: 80px 0 210px 0;
   color: var(--white);
-  background: url(../images/svg/Kimlic_city_Footer_illustration.svg) ,linear-gradient(to bottom, #00a3fa, #3381ff 40%, #3d56cd);
+  background: url(../images/svg/Footer_bg.svg) ,linear-gradient(to bottom, #00a3fa, #3381ff 40%, #3d56cd);
   background-position-x: 0%, 0%;
   background-position-y: 0%, 0%;
   background-repeat: repeat, repeat;
@@ -1113,22 +1120,19 @@ footer.footer ul.products li{
 }
 .event-card-body h5 {
   font-size: 24px;
-  font-weight: 600;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.25;
   letter-spacing: -0.6px;
   text-align: left;
 }
-.event-card-body img {
+.owl-carousel .owl-item .event-card-body img {
   height: 21px;
   vertical-align: top;
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
 }
 .event-card-body label {
   font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.44;
   letter-spacing: -0.5px;
   text-align: left;
@@ -1170,7 +1174,7 @@ footer.footer ul.products li{
 .market_size .title,
 .market_size h3,
 .market_size h3 small{
-  color: #ffffff;
+  color: var(--white);
   text-align: center;
   font-family: 'mulilight';
 }
@@ -1202,7 +1206,7 @@ footer.footer ul.products li{
 .btn-kimlic-pink:hover, .btn-kimlic-pink:focus {
     outline: none;
     background: #ba64da;
-    color: #fff;
+    color: var(--white);
 }
 .Kimlic_works .work_section h1,
 .Kimlic_works .work_section p,
@@ -1216,6 +1220,132 @@ footer.footer ul.products li{
 .more-advisors, .more-team {
   display: none;
 }
+.owl-dots {
+  text-align: center;
+  margin-top: 1rem;
+}
+.owl-dot span {
+  border: 2px solid #a7a7a7;
+  width: 13px;
+  height: 13px;
+  display: block;
+  border-radius: 100%;
+  margin: 0 5px;
+}
+.owl-dot.active span {
+  background: #a7a7a7;
+}
+.owl-nav button {
+  position: absolute;
+  top: 35%;
+}
+.owl-prev {
+  left: 0;
+}
+.owl-next {
+  right: 0;
+}
+.owl-nav i {
+  color: #a7a7a7;
+  font-size: 50px;
+}
+.event-card {
+  max-width: 350px;
+  margin: 0 auto;
+}
+.telegram_chat {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    bottom: 20px;
+    right: 20px;
+}
+.link i {
+    background: var(--white);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 30px;
+    font-size: 20px;
+    color: #1776d1;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.link i:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+#advisors_board .link i {
+    background: #1776d1;
+    color: var(--white);
+}
+.biography_modal .modal-dialog {
+    max-width: 635px;
+}
+.biography_modal .modal-dialog .modal-content {
+    background: #217ce7;
+    border-radius: 25px;
+    color: var(--white);
+    font-size: 20px;
+    font-family: 'mulilight';
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.biography_modal .heading {
+    font-size: 28px;
+    margin: 30px 0 0;
+}
+.biography_modal .subhead {
+    font-size: 22px;
+}
+.biography_modal .modal-footer, .biography_modal .modal-header {
+    border: none;
+}
+.biography_modal .advisors_logo {
+    margin: 20px 0;
+}
+.biography_modal .modal-header {
+    padding: 0;
+    justify-content: flex-end; 
+}
+.biography_modal .modal-header .close {
+    margin: 0;
+    padding: 0;
+    color: var(--white);
+    opacity: 1;
+    font-size: 50px;
+    position: absolute;
+    z-index: 1;
+    right: 30px;
+    top: 20px;
+}
+.biography_modal .modal-footer {
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.biography_modal .modal-footer a {
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--white);
+    font-weight: bold;
+    margin-right: 25px;
+}
+.biography_modal .modal-footer a img {
+    margin-right: 10px;
+}
+.team_bio {
+    text-align: left;
+    max-height: 290px;
+    overflow: auto;
+}
+
 
 @keyframes fadeInUp {
   from {

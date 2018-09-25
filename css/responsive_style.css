@@ -288,7 +288,6 @@
   }
   .title {
     font-size: 40px;
-    padding: 0px 0;
   }
   .subtitle {
     font-size: 24px;
@@ -796,9 +795,6 @@
     margin: 10px auto;
     max-width: 100px;
   }
-  .event-card {
-    margin-bottom: 1em;
-  }
   .event-card-head img {
     width: 100%;
     max-width: 100%;
@@ -848,6 +844,9 @@
   }
   .market_size {
     padding: 50px 0 80px;
+  }
+  .events-slider {
+    margin: 0;
   }
 }
 @media screen and (max-width: 767px) and (orientation: landscape) {
@@ -938,6 +937,12 @@
   .Hard-Cap {
     font-size: 12px;
   }
+  .event-card {
+    max-width: 250px;
+  }
+  .owl-nav i {
+    font-size: 30px;
+  }
 }
 @media (max-width: 380px) {
   .our_solution .solution-img:after {
@@ -952,6 +957,14 @@
 @media (max-width: 340px) {
   .our_solution .solution-img:after {
     height: 55.4%;
+  }
+}
+@media (min-width: 768px) {
+  .owl-prev {
+    left: -15px;
+  }
+  .owl-next {
+    right: -15px;
   }
 }
 @media (min-width: 1600px) {

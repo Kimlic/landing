@@ -46,6 +46,32 @@ jQuery(document).ready(function($) {
     // $("#advisors_board").addClass("open");
   });
 
+  $(".navbar-nav li a").click(function(){
+    $(".navbar-nav li a").removeClass("active");
+    $(this).addClass("active").css("transition","all eaase-in-out 0.6s");
+  });
+
+  $('.events-slider').owlCarousel({
+      loop:true,
+      items:3,
+      /*autoplay: true,
+      autoplayTimeout: 5000,*/
+      nav:true,
+      navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa-angle-right'></i>"],
+      responsiveClass:true,
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:2
+          },
+          1024:{
+              items:3
+          }
+      }
+  })
+
 });
 
 
@@ -74,11 +100,4 @@ var countDownDate = new Date("Oct 16, 2018 00:00:00").getTime();
           clearInterval(x);
           document.getElementById("countdown").innerHTML = "EXPIRED";
       }
-  });
-
-  $(document).ready(function(){
-    $(".navbar-nav li a").click(function(){
-      $(".navbar-nav li a").removeClass("active");
-      $(this).addClass("active").css("transition","all eaase-in-out 0.6s");
-    });
   });

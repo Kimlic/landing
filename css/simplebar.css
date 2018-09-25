@@ -1,0 +1,122 @@
+[data-simplebar] {
+    position: relative;
+    z-index: 0;
+    overflow: hidden!important;
+    max-height: inherit;
+    -webkit-overflow-scrolling: touch; /* Trigger native scrolling for mobile, if not supported, plugin is used. */
+}
+
+[data-simplebar="init"] {
+    display: flex;
+}
+
+[data-simplebar] .simplebar-scroll-content,
+[data-simplebar] .simplebar-content {
+    overflow: hidden;
+}
+
+[data-simplebar="init"] .simplebar-scroll-content,
+[data-simplebar="init"] .simplebar-content {
+    overflow: scroll;
+}
+
+.simplebar-scroll-content {
+    overflow-x: hidden!important;
+    min-width: 100%!important;
+    max-height: inherit!important;
+    box-sizing: content-box!important;
+}
+
+.simplebar-content {
+    overflow-y: hidden!important;
+    box-sizing: border-box!important;
+    min-height: 100%!important;
+}
+
+.simplebar-track {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 7px;
+    pointer-events: none;
+}
+
+.simplebar-scrollbar {
+    position: absolute;
+    right: 0px;
+    width: 7px;
+    min-height: 10px;
+}
+.simplebar-content {
+    padding-right: 5px;
+}
+.simplebar-content:after {
+    position: absolute;
+    background: rgba(33, 124, 232, 0.45);
+    bottom: 0;
+    width: 98%;
+    height: 70px;
+    z-index: 1;
+    content: '';
+    left: 0;
+}
+.simplebar-scrollbar:before {
+    position: absolute;
+    content: "";
+    background: #fff;
+    border-radius: 7px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.simplebar-track .simplebar-scrollbar.visible:before {
+    /* When hovered, remove all transitions from drag handle */
+    opacity: 1;
+    transition: opacity 0 linear;
+}
+
+.simplebar-track.vertical {
+    top: 0;
+    background: #0a66d5;
+    border-radius: 7px;
+}
+
+.simplebar-track.vertical .simplebar-scrollbar:before {
+    top: 0;
+    bottom: 2px;
+}
+
+.simplebar-track.horizontal {
+    left: 0;
+    width: auto;
+    height: 11px;
+}
+
+.simplebar-track.horizontal .simplebar-scrollbar:before {
+    height: 100%;
+    left: 2px;
+    right: 2px;
+}
+
+.horizontal.simplebar-track .simplebar-scrollbar {
+    right: auto;
+    left: 0;
+    top: 2px;
+    height: 7px;
+    min-height: 0;
+    min-width: 10px;
+    width: auto;
+}
+
+/* Rtl support */
+[data-simplebar-direction="rtl"] .simplebar-track {
+    right: auto;
+    left: 0;
+}
+
+[data-simplebar-direction="rtl"] .simplebar-track.horizontal {
+    right: 0;
+}
