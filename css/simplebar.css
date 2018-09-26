@@ -93,6 +93,7 @@
     left: 0;
     width: auto;
     height: 11px;
+    display: none;
 }
 
 .simplebar-track.horizontal .simplebar-scrollbar:before {

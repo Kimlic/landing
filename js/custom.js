@@ -47,8 +47,8 @@ jQuery(document).ready(function($) {
   });
 
   $(".navbar-nav li a").click(function(){
-    $(".navbar-nav li a").removeClass("active");
-    $(this).addClass("active").css("transition","all eaase-in-out 0.6s");
+    $(".navbar-nav li a").removeClass("selected");
+    $(this).addClass("selected").css("transition","all eaase-in-out 0.6s");
   });
 
   $('.events-slider').owlCarousel({
@@ -71,6 +71,20 @@ jQuery(document).ready(function($) {
           }
       }
   })
+
+  var sections = $('section')
+  , nav = $('#Sidebar ul')
+  $(window).on('scroll', function () {
+    var cur_pos = $(this).scrollTop();
+    sections.each(function() {
+      var top = $(this).offset().top - 145;
+
+      if (cur_pos >= top) {
+        nav.find('a').removeClass('selected');
+        nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('selected'); 
+      }
+    });
+  });
 
 });
 
