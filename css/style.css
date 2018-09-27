@@ -281,16 +281,12 @@ img {
 }
 .kimlic_documents {
     background: url(../images/svg/doc_bg.svg);
-    background-position: center bottom;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--white);
     font-family: 'mulilight';
     position: relative;
-}
-.kimlic_documents .container {
-    position: relative;
-    z-index: 2;
 }
 .kimlic_documents h1 {
     color: var(--white);
@@ -301,7 +297,7 @@ img {
 .kimlic_documents h3 {
     font-size: 24px;
     line-height: 42px;
-    margin-bottom: 15px;
+    margin-bottom: 19px;
     letter-spacing: -0.7px;
 }
 .kimlic_documents img {
@@ -313,7 +309,7 @@ img {
 .kimlic_documents h3 a {
     border-radius: 30px;
     padding: 4px 24px;
-    font-size: 22px;
+    font-size: 18px;
 }
 .fund_allocation {
      background: url(../images/svg/bitcoin.svg), linear-gradient(#f6f8fb, #d1e1f7);
@@ -323,26 +319,17 @@ img {
      background-repeat: no-repeat;
      background-position: center 120%, center bottom; 
 }
-.fund_allocation .container {
-    position: relative;
-    z-index: 2;
-}
-.fund_allocation .token_details_box {
+
+.token_details_box {
     background: rgba(255, 255, 255, 0.8);
     width: 100%;
-    min-height: 500px;
-    margin: 0 auto;
+    margin: 100px auto 0;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 26px;
     max-width: 962px;
-    padding: 10px 80px 40px;
-    margin-bottom: 100px;
+    padding: 10px 80px 40px;    
 }
-.fund_allocation .token_details_box ul {
-    margin: 0;
-    padding: 0;
-}
-.fund_allocation .token_details_box ul li {
+.token_details_box ul li {
     display: block;
     color: var(--gray);
     width: 100%;
@@ -350,10 +337,10 @@ img {
     font-size: 22px;
     font-family: 'mulisemibold';
 }
-.fund_allocation .token_details_box ul li:not(:last-child) {
+.token_details_box ul li:not(:last-child) {
     border-bottom: #d9eaff solid 1px;
 }
-.fund_allocation .token_details_box ul li span {
+.token_details_box ul li span {
     color: #a1b7c9;
     float: right;
     font-family: 'muliregular';
@@ -475,6 +462,7 @@ img {
     content: "";
     right: -8px;
     top: 45%;
+    background: #fff; 
 }
 .road_map .road_map_main .purple_year li .road_map_box.purple:after {
     border: #43b5fc solid 5px;
@@ -509,16 +497,16 @@ img {
 .road_map .road_map_main ul li .road_map_box h4 {
     font-size: 24px;
     font-family: 'mulisemibold';
-    margin-bottom: 20px;
+    margin-bottom: 17px;
 }
 .road_map .road_map_main .purple_year li .road_map_box.purple h4 {
     color: #43b5fc;
 }
 .road_map .road_map_main .blue_year li .road_map_box.blue h4 {
-    color: #95d3ff;
+    color: #3facfa;
 }
 .road_map .road_map_main ul li .road_map_box p {
-    font-size: 22px;
+    font-size: 20px;
     color: var(--gray);
     font-family: 'mulilight';
     margin-bottom: 6px;
@@ -667,24 +655,24 @@ img {
 }
 .kimlic_mailing_list button {
     position: absolute;
-    right: 6px;
-    top: 6px;
-    background: #c477fb;
+    right: 10px;
+    top: 10px;
+    background: #1296fb;
     color: var(--white);
-    font-size: 22px;
+    font-size: 20px;
     text-transform: uppercase;
     border: none;
     border-radius: 40px;
-    padding: 18px 0;
+    padding: 12px 0;
     max-width: 220px;
     width: 100%;
-    cursor: pointer;
+    box-shadow: 0 9px 0 -3px #056ebf;
 }
 .kimlic_mailing_list button:hover,
 .kimlic_mailing_list button:focus,
 .kimlic_mailing_list button:not(:disabled):not(.disabled).active,
 .kimlic_mailing_list button:not(:disabled):not(.disabled):active {
-    background: #a43dec;
+    background: #2d84fe;
 }
 .kimlic_mailing_list ::-webkit-input-placeholder {
     color: #ccc;
@@ -704,7 +692,7 @@ footer.footer {
     background: url(../images/svg/Footer_bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center bottom;
+    background-position: center top;
 }
 footer.footer .footer-logo {
     max-width: 200px;
@@ -722,16 +710,12 @@ footer.footer p span {
 footer.footer h4 {
     text-transform: uppercase;
     margin: 28px 0 42px;
+    font-family: 'muliextrabold';
     font-size: 22px;
-    font-weight: 900;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.64;
     letter-spacing: -0.6px;
 }
 footer.footer ul {
-    margin: 0;
-    padding: 0;
     font-family: 'mulilight';
 }
 footer.footer ul li {
@@ -1014,20 +998,10 @@ footer.footer ul.products li {
 .market_size h3,
 .market_size h3 small {
     color: var(--white);
-    text-align: center;
     font-family: 'mulilight';
 }
 .market_size h3 small {
     font-size: 22px;
-}
-.market-img {
-    width: 100%;
-}
-.market-img img {
-    max-width: 998px;
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
 }
 
 /*market size end*/
@@ -1056,6 +1030,9 @@ footer.footer ul.products li {
 .Kimlic_works .work_section p,
 .learn-more-button {
     text-align: left;
+}
+.Kimlic_works .work_section h1 {
+    font-size: 42px;
 }
 
 /*custom button */
@@ -1199,6 +1176,10 @@ div.section-cutout {
 }
 div.section-cutout img {
     display: block;
+}
+#technologies a {
+    display: block;
+    text-align: center;
 }
 
 @keyframes fadeInUp {

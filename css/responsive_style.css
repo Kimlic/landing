@@ -85,7 +85,7 @@
   .kimlic_documents h3 {
     font-size: 23px;
   }
-  .fund_allocation .token_details_box ul li span {
+  .token_details_box ul li span {
     width: 46%;
   }
   .road_map .road_map_main ul li .road_map_box {
@@ -175,7 +175,7 @@
     font-size: 21px;
   }
   .Kimlic_works .work_section,
-  .fund_allocation .token_details_box ul li {
+  .token_details_box ul li {
     font-size: 18px;
   }
   .Kimlic_works .work_section .row {
@@ -185,7 +185,7 @@
     font-size: 21px;
     line-height: 45px;
   }
-  .fund_allocation .token_details_box {
+  .token_details_box {
     margin-bottom: 30px;
   }
   .road_map .road_map_main ul li .road_map_box {
@@ -307,8 +307,9 @@
   .header_subscribe .mobile-app {
     margin-top: 50px;
   }
-  #partners {
-    margin-top: -10px;
+  #partners,
+  #advisors_board .title {
+    margin-top: 0;
   }
   .header_subscribe h3 {
     font-size: 17px
@@ -407,16 +408,16 @@
     max-width: 100%;
     margin-left: 0 !important;
   }
-  .fund_allocation .token_details_box {
+  .token_details_box {
     width: 90%;
     margin: 0 auto;
     padding: 10px 15px 40px;
     margin-bottom: 40px;
   }
-  .fund_allocation .token_details_box ul li {
+  .token_details_box ul li {
     font-size: 20px;
   }
-  .fund_allocation .token_details_box ul li span {
+  .token_details_box ul li span {
     float: none;
     width: 100%;
     display: block;
@@ -446,7 +447,8 @@
     font-size: 22px;
     margin-bottom: 10px;
   }
-  .road_map .road_map_main ul li .road_map_box p {
+  .road_map .road_map_main ul li .road_map_box p,
+  .events-slider {
     margin: 0;
   }
   .kimlic_mailing_list .form-group {
@@ -559,10 +561,7 @@
   #technical_team .row .col-12:last-child p,
   #advisors_board .row .col-12:last-child p {
     margin-bottom: 0;
-  }
-  #advisors_board .title{
-    padding-top: 0;
-  }
+  }  
   #kimlic_mailing_list .title span {
     font-size: 20px;
     line-height: 25px;
@@ -613,10 +612,7 @@
     font-size: 25px;
   }
   #Financial_Institutions img {
-    margin-top: 30px;
-  }
-  .events-slider {
-    margin: 0;
+    margin-top: 50px;
   }
   .telegram_chat img {
     width: 50px;
@@ -624,8 +620,9 @@
   #show_all_advisors {
     margin-bottom: 40px;
   }
-  .kimlic-work-row {
-    text-align: center;
+  #technologies img {
+    max-height: 66px;
+    max-width: 66px;
   }
 }
 @media screen and (max-width: 767px) and (orientation: landscape) {
@@ -633,10 +630,6 @@
   .advisors_board .team_img+p {
     font-size: 20px;
     line-height: 25px;
-  }
-  .technical_team .team_img+p span,
-  .advisors_board .team_img+p span {
-    font-size: 16px;
   }
   footer.footer ul li {
     width: 100%;
@@ -685,6 +678,11 @@
   .Kimlic_works .work_section p,
   .learn-more-button {
     text-align: center;
+  }
+  #technologies img {
+    max-height: 66px;
+    max-width: 100px;
+    margin-bottom: 25px;
   }
 }
 @media screen and (max-width: 480px) {
