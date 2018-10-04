@@ -81,9 +81,6 @@ img {
     color: var(--heading-color);
     border: 2px solid var(--heading-color);
 }
-.white_paper_btn:hover {
-    color: var(--white);
-}
 .navbar-expand-lg .navbar-nav .nav-link.white_paper_btn {
     padding: 12px 29px;
     line-height: 16px;
@@ -165,8 +162,7 @@ img {
     margin-top: 150px;
 }
 #partners {
-    background: var(--off-white);
-    margin-top: -50px;
+    background: var(--off-white);    
     position: relative;
 }
 .title {
@@ -253,32 +249,6 @@ img {
 .kimlic-work-row img {
     max-width: 250px;
 }
-.Kimlic_works .work_section .row {
-    position: relative;
-    padding: 5px 0 30px 50px;
-}
-.Kimlic_works .work_section .row .circle {
-    position: absolute;
-    width: 55px;
-    height: 55px;
-    border-radius: 100%;
-    background: var(--white);
-    border: #e28efc solid 2px;
-    text-align: center;
-    left: -26px;
-    top: 0;
-    line-height: 55px;
-    color: #e28efc;
-    font-size: 25px;
-    font-weight: 600;
-}
-.Kimlic_works .work_section {
-    color: var(--gray);
-    font-size: 22px;
-}
-.Kimlic_works .work_section h3 {
-    font-size: 28px;
-}
 .kimlic_documents {
     background: url(../images/svg/doc_bg.svg);
     background-position: center center;
@@ -312,12 +282,12 @@ img {
     font-size: 18px;
 }
 .fund_allocation {
-     background: url(../images/svg/bitcoin.svg), linear-gradient(#f6f8fb, #d1e1f7);
-     background: url(../images/svg/bitcoin.svg), -webkit-linear-gradient(#f6f8fb, #d1e1f7);
-     background: url(../images/svg/bitcoin.svg), -ms-linear-gradient(#f6f8fb, #d1e1f7);
-     min-height: 800px;
-     background-repeat: no-repeat;
-     background-position: center 120%, center bottom; 
+    background: url(../images/svg/bitcoin.svg), linear-gradient(#f6f8fb, #d1e1f7);
+    background: url(../images/svg/bitcoin.svg), -webkit-linear-gradient(#f6f8fb, #d1e1f7);
+    background: url(../images/svg/bitcoin.svg), -ms-linear-gradient(#f6f8fb, #d1e1f7);
+    min-height: 800px;
+    background-repeat: no-repeat;
+    background-position: center 120%, center bottom; 
 }
 
 .token_details_box {
@@ -347,6 +317,10 @@ img {
     width: 50%;
 }
 .road_map {
+    background-image: -webkit-linear-gradient(to bottom, rgba(239, 237, 249, 0), rgba(239, 237, 249, 0.51) 70%, #efedf9);
+    background-image: -moz-linear-gradient(to bottom, rgba(239, 237, 249, 0), rgba(239, 237, 249, 0.51) 70%, #efedf9);
+    background-image: -o-linear-gradient(to bottom, rgba(239, 237, 249, 0), rgba(239, 237, 249, 0.51) 70%, #efedf9);
+    background-image: -ms-linear-gradient(to bottom, rgba(239, 237, 249, 0), rgba(239, 237, 249, 0.51) 70%, #efedf9);
     background-image: linear-gradient(to bottom, rgba(239, 237, 249, 0), rgba(239, 237, 249, 0.51) 70%, #efedf9);
 }
 .road_map .road_map_main {
@@ -546,7 +520,9 @@ img {
     right: 0;
     z-index: 2;
     height: 100%;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 .technical_team .team_img:after,
@@ -569,6 +545,7 @@ img {
 .technical_team .team_img:hover a,
 .advisors_board .team_img:hover a {
     display: flex;
+    display: -ms-flexbox;
 }
 .technical_team .team_img:hover:after,
 .advisors_board .team_img:hover:after {
@@ -621,12 +598,11 @@ img {
     position: relative;
     background: linear-gradient(to bottom, #3d9cfa, #69bfff);
 }
-.advisors_board .team_img+p {
-    color: var(--white);
-}
 .advisors_logo {
     display: flex;
+    display: -ms-flexbox;
     justify-content: center;
+    -ms-flex-pack: center;
 }
 .advisors_logo li {
     padding: 0 5px;
@@ -686,28 +662,28 @@ img {
 .kimlic_mailing_list :-moz-placeholder {
     color: #ccc;
 }
-footer.footer {
+.footer {
     padding: 80px 0 210px 0;
     color: var(--white);
     background: url(../images/svg/Footer_bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
+    font-family: 'mulilight';
 }
-footer.footer .footer-logo {
+.footer .footer-logo {
     max-width: 200px;
     width: 100%;
     margin-bottom: 30px;
 }
-footer.footer p {
-    font-size: 18px;
-    font-family: 'mulilight';
+.footer p {
+    font-size: 18px;    
     margin-bottom: 30px;
 }
-footer.footer p span {
+.footer p span {
     font-family: 'mulisemibold';
 }
-footer.footer h4 {
+.footer h4 {
     text-transform: uppercase;
     margin: 28px 0 42px;
     font-family: 'muliextrabold';
@@ -715,47 +691,28 @@ footer.footer h4 {
     line-height: 1.64;
     letter-spacing: -0.6px;
 }
-footer.footer ul {
-    font-family: 'mulilight';
-}
-footer.footer ul li {
+.footer ul li {
     list-style: none;
     font-size: 18px;
-    width: 50%;
+    width: 100%;
     float: left;
     margin: 5px 0;
 }
-footer.footer ul li a {
-    color: var(--white);
-}
-footer.footer ul li a:hover {
+.footer ul li a:hover {
     opacity: 0.6;
 }
-footer.footer ul li img {
+.footer ul li img {
     height: 20px;
     position: relative;
     top: -5px;
     margin-right: 5px;
     width: 30px;
 }
-footer.footer ul.company li {
-    width: 100%;
+.footer ul.community li {
+    width: 50%;
 }
-footer.footer ul.products {
+.footer ul.products {
     margin: 0 auto 45px;
-}
-footer.footer ul.products li {
-    width: 100%;
-}
-#problem_statement .title {
-    margin-bottom: 30px;
-}
-.solution-img {
-    position: relative;
-    margin-top: 50px;
-}
-.solution-img img {
-    margin: auto;
 }
 .all_team,
 .all_advisors {
@@ -770,14 +727,6 @@ footer.footer ul.products li {
     vertical-align: top;
     position: relative;
 }
-.bg-gray {
-    background: var(--off-white);
-    padding-top: 70px;
-}
-#partners a {
-    display: block;
-    text-align: center;
-}
 .form-error,
 .form-success {
     margin-top: 1.5625em;
@@ -788,10 +737,6 @@ footer.footer ul.products li {
     bottom: 1.5625em;
     left: 50%;
     z-index: 999;
-}
-.accordion li .accordion__content>*,
-.input-file input {
-    display: none;
 }
 .form-error {
     background: #D84D4D;
@@ -938,14 +883,12 @@ footer.footer ul.products li {
     height: 28px;
     overflow: hidden;
 }
-#advisors_board .title {
-    color: var(--white);
-}
 #advisors_board .title span {
     letter-spacing: normal;
 }
 .advisors_logo {
     display: flex;
+    display: -ms-flexbox;
 }
 #advisors_board {
     position: relative;    
@@ -1134,6 +1077,7 @@ footer.footer ul.products li {
 }
 .biography_modal .modal-header {
     padding: 0;
+    -ms-flex-pack: end;
     justify-content: flex-end;
 }
 .biography_modal .modal-header .close {
@@ -1177,6 +1121,12 @@ div.section-cutout img {
 #technologies a {
     display: block;
     text-align: center;
+}
+.footer ul li a,
+#advisors_board .title,
+.white_paper_btn:hover,
+.advisors_board .team_img+p {
+    color: var(--white);
 }
 
 @keyframes fadeInUp {
