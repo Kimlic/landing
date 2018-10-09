@@ -247,7 +247,8 @@ img {
     letter-spacing: -0.6px;
 }
 .kimlic-work-row img {
-    max-width: 250px;
+    height: 250px;
+    width: 250px;
 }
 .kimlic_documents {
     background: url(../images/svg/doc_bg.svg);
